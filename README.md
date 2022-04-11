@@ -20,7 +20,7 @@
 
 Font size is determined by 16px, 8 pt system and Geometric Pattern. Applied to any text
 
-CSS | what it does 
+CSS | What it does 
 --- | --- 
 .text-xxxl |  112px
 h1, .text-xxl | 80px
@@ -32,7 +32,7 @@ h5, h6, .text-s | 16px
 .text-xs | 12px
 
 h1 h2 h3 default line height: 1em, letter spacing: -0.025
-```
+
 
 ## Text Classes
 CSS | what it does 
@@ -67,17 +67,25 @@ Use variable xs, s, m, l, xl, xxl, xxxl
 
 
 ### Space-V - Create vertical gap (Apply to Div)
-```
-.space-v-s : adds margin top child 16px
-.space-v-m : adds margin top child 24px
-.space-v-l : adds margin top child 32px
-.space-v-xl : adds margin top child 48px
-```
-Space-H - Create horizontal gap (Apply to Div)
-.space-h-s : adds margin left child 16px
-.space-h-m : adds margin left child 24px
-.space-h-l : adds margin left child 32px
-.space-h-xl : adds margin left child 48px
+
+CSS | What it does 
+--- | --- 
+.space-v-s | adds margin top child 16px
+.space-v-m | adds margin top child 24px
+.space-v-l | adds margin top child 32px
+.space-v-xl | adds margin top child 48px
+
+### Space-H - Create horizontal gap (Apply to Div)
+
+No currently in used
+
+CSS | What it does 
+--- | --- 
+.space-h-s | adds margin left child 16px
+.space-h-m | adds margin left child 24px
+.space-h-l | adds margin left child 32px
+.space-h-xl | adds margin left child 48px
+
 
 Padding spacing
 .pad-xs : adds padding all 12px 
