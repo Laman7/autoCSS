@@ -63,10 +63,14 @@ CSS | what it does
 
 
 ## Spacing Classes
-Use variable xs, s, m, l, xl, xxl, xxxl
+Use variable xs, s, m, l, xl, xxl, xxxl for example
+```
+margin : var(--xs)
+```
 
 
 ### Space-V - Create vertical gap (Apply to Div)
+Don't apply it to section. 
 
 CSS | What it does 
 --- | --- 
@@ -77,7 +81,7 @@ CSS | What it does
 
 ### Space-H - Create horizontal gap (Apply to Div)
 
-No currently in used
+Not currently in used
 
 CSS | What it does 
 --- | --- 
