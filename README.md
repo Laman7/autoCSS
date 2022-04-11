@@ -1,4 +1,4 @@
-#Auto CSS
+# Auto CSS
 
 ## To make development quicker and easier for developer.
 
@@ -12,9 +12,12 @@
 -- Landscape: 768px
 -- Portrait: 480px
 
-Define the Primary Color
+## Steps
 
-Font size Apply to any text
+### Define the Primary Color
+
+## Font size 
+Applied to any text
 .text-xxxl : 112px
 h1, .text-xxl :80px
 h2, .text-xl :48px
@@ -25,7 +28,7 @@ h5, h6, .text-s :16px
 .text-xs :12px
 h1 h2 h3 default : Line height 1em, letter spacing: -0.025
 
-Text
+## Text
 .text-larger : current font size x2
 .text-smaller : current font size x 0.875
 .text-lighter : font text weight 100
