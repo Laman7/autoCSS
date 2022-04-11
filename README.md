@@ -133,8 +133,8 @@ CSS | What it does
 .sticky-top-m | from top 5%
 .sticky-top-l | from top 10%
 
-# Call to Action
-## Button
+## Call to Action
+### Button
 CSS | What it does 
 --- | --- 
 .btn-primary | Rounded button with primary color
@@ -146,7 +146,7 @@ CSS | What it does
 .btn-m | Button size based on font size 24px
 .btn-l | Button size based on font size 32px
 
-## Link
+### Link
 CSS | What it does 
 --- | --- 
 Link default color is primary color
@@ -154,7 +154,7 @@ Link default color is primary color
 .link-secondary | Font color is secondary
 .link-accent | Font color is accent
 
-## Rounded
+### Rounded
 CSS | What it does 
 --- | --- 
 .rounded-s | Border radius of 4px
@@ -164,7 +164,7 @@ CSS | What it does
 .rounded-xxl | Border radius of 64px
 .rounded-circle | Border radius of 50%
 
-# Defaults
+## Defaults
 Table - Based on MVP
 Blockquote - Based on MVP
 Form - Based on MVP
