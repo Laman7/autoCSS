@@ -67,7 +67,7 @@ margin : var(--xs)
 ```
 
 
-### 1. Space-V - Create vertical gap (Apply to Div)
+## 1. Space-V - Create vertical gap (Apply to Div)
 Don't apply it to section. 
 
 CSS | What it does 
@@ -77,7 +77,7 @@ CSS | What it does
 .space-v-l | adds margin top child 32px
 .space-v-xl | adds margin top child 48px
 
-### 2. Space-H - Create horizontal gap (Apply to Div)
+## 2. Space-H - Create horizontal gap (Apply to Div)
 
 Not currently in used
 
@@ -89,7 +89,7 @@ CSS | What it does
 .space-h-xl | adds margin left child 48px
 
 
-Padding spacing
+## 3. Padding spacing
 CSS | What it does 
 --- | --- 
 .pad-xs | adds padding all 12px 
@@ -97,7 +97,6 @@ CSS | What it does
 .pad-m | adds padding all 24px 
 .pad-l | adds padding all 32px 
 .pad-xl | adds padding all 48px 
-
 .pad-v-xs | adds padding vertically, top and bottom 12px 
 .pad-v-s | adds padding vertically, top and bottom 16px 
 .pad-v-m | adds padding vertically, top and bottom 24px 
@@ -111,7 +110,7 @@ CSS | What it does
 .pad-h-l | adds padding horizontally, left and right 32px 
 .pad-h-xl | adds padding horizontally, left and right 48px 
 
-Section spacing
+# Section spacing
 CSS | What it does 
 --- | --- 
 .section-pad-s | adds padding 48px top and bottom
@@ -134,7 +133,8 @@ CSS | What it does
 .sticky-top-m | from top 5%
 .sticky-top-l | from top 10%
 
-Button
+# Call to Action
+## Button
 CSS | What it does 
 --- | --- 
 .btn-primary | Rounded button with primary color
@@ -146,7 +146,7 @@ CSS | What it does
 .btn-m | Button size based on font size 24px
 .btn-l | Button size based on font size 32px
 
-Link
+## Link
 CSS | What it does 
 --- | --- 
 Link default color is primary color
@@ -154,7 +154,7 @@ Link default color is primary color
 .link-secondary | Font color is secondary
 .link-accent | Font color is accent
 
-Rounded
+## Rounded
 CSS | What it does 
 --- | --- 
 .rounded-s | Border radius of 4px
@@ -164,6 +164,7 @@ CSS | What it does
 .rounded-xxl | Border radius of 64px
 .rounded-circle | Border radius of 50%
 
+# Defaults
 Table - Based on MVP
 Blockquote - Based on MVP
 Form - Based on MVP
