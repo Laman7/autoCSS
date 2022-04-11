@@ -40,26 +40,28 @@ CSS | what it does | where to use it
 .text-smaller | current font size x 0.875 | what ever it does.
 .text-lighter | font text weight 100 | make it lighter
 .text-light | font text weight 200 | what ever this means
+.text-bold | font text weight 700 | make text thick
+.text-bolder | font text weight 900 | thicker than ever
+.text-italic | font text italic | leaning Tower of Pisa
+.text-oblique | font text oblique | Not sure
+.text-underline | font text underline | highlight points
+.text-underline-wavy | font text underline | makes it curvy
+.text-underline-dotted | font text underline-dotted | dotted underlined
+.text-underline-double | font text underline-double | double underlined
+.text-underline-dashed | font text underline-dashed | dashed
+.text-overline | font text overline | fonts wear hats
+.text-line-through | font text line-through |
 
-| .text-bold | font text weight 700 |
-| .text-bolder | font text weight 900 |
-| .text-italic | font text italic |
-| .text-oblique | font text oblique |
-| .text-underline | font text underline |
-| .text-underline-wavy | font text underline |
-| .text-underline-dotted | font text underline-dotted |
-| .text-underline-double | font text underline-double |
-| .text-underline-dashed | font text underline-dashed |
-| .text-overline | font text overline |
-| .text-line-through | font text line-through |
-| .text-uppercase | font text uppercase |
-| .text-lowercase | font text lowercase |
-| .text-capitalize | font text capitalize |
-| .text-left | font text left |
-| .text-center | font text center |
-| .text-right | font text right |
-| .text-justify | font text justify |
-| .text-none | font text decoration-none |
+CSS | What it Does
+--- | ---
+.text-uppercase | font text uppercase 
+.text-lowercase | font text lowercase 
+.text-capitalize | font text capitalize 
+.text-left | font text left 
+.text-center | font text center 
+.text-right | font text right 
+.text-justify | font text justify 
+.text-none | font text decoration-none 
 
 
 ## Spacing Classes
