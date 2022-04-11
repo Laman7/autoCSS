@@ -29,7 +29,8 @@ h4, .text-m :24px
 body: 18px
 h5, h6, .text-s :16px
 .text-xs :12px
-h1 h2 h3 default : Line height 1em, letter spacing: -0.025```
+h1 h2 h3 default line height: 1em, letter spacing: -0.025
+```
 
 ## Text Classes
 .text-larger : current font size x2
