@@ -12,15 +12,14 @@
 -- Landscape: 768px
 -- Portrait: 480px
 
-## Steps
+~~ Steps - Define the Primary Color  ~~
 
-### Define the Primary Color
-
-## Font Size
+# Font Size
 
 Font size is determined by 16px, 8 pt system and Geometric Pattern. Applied to any text
 
-CSS | What it does 
+## Default Font Classes
+CSS | Calculated Size
 --- | --- 
 .text-xxxl |  112px
 h1, .text-xxl | 80px
@@ -62,14 +61,14 @@ CSS | what it does
 .text-none | font text decoration-none 
 
 
-## Spacing Classes
+# Spacing Classes
 Use variable xs, s, m, l, xl, xxl, xxxl for example
 ```
 margin : var(--xs)
 ```
 
 
-### Space-V - Create vertical gap (Apply to Div)
+### 1. Space-V - Create vertical gap (Apply to Div)
 Don't apply it to section. 
 
 CSS | What it does 
@@ -79,7 +78,7 @@ CSS | What it does
 .space-v-l | adds margin top child 32px
 .space-v-xl | adds margin top child 48px
 
-### Space-H - Create horizontal gap (Apply to Div)
+### 2. Space-H - Create horizontal gap (Apply to Div)
 
 Not currently in used
 
