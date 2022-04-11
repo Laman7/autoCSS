@@ -59,13 +59,15 @@ CSS | what it does
 .text-justify | font text justify 
 .text-none | font text decoration-none 
 
+## Text Color
+CSS | what it does 
+--- | --- 
+.primary | change color to primary
+.secondary | change color to secondary
+.accent | change color to accent
+.base | change color to base
 
 # Spacing Classes
-Use variable xs, s, m, l, xl, xxl, xxxl for example
-```
-margin : var(--xs)
-```
-
 
 ## 1. Space-V - Create vertical gap (Apply to Div)
 Don't apply it to section. 
@@ -109,6 +111,11 @@ CSS | What it does
 .pad-h-m | adds padding horizontally, left and right 24px 
 .pad-h-l | adds padding horizontally, left and right 32px 
 .pad-h-xl | adds padding horizontally, left and right 48px 
+
+You can use variable xs, s, m, l, xl, xxl, xxxl for example
+```
+#div123 { margin : var(--xs)}
+```
 
 ## 4. Section spacing
 CSS | What it does 
