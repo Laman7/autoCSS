@@ -29,10 +29,12 @@ h4, .text-m :24px
 body: 18px
 h5, h6, .text-s :16px
 .text-xs :12px
+
 h1 h2 h3 default line height: 1em, letter spacing: -0.025
 ```
 
 ## Text Classes
+```
 .text-larger : current font size x2
 .text-smaller : current font size x 0.875
 .text-lighter : font text weight 100
@@ -56,16 +58,19 @@ h1 h2 h3 default line height: 1em, letter spacing: -0.025
 .text-right : font text right
 .text-justify : font text justify
 .text-none : font text decoration-none
+```
 
-Spacing
+## Spacing Classes
 Use variable xs, s, m, l, xl, xxl, xxxl
 
-Space-V - Create vertical gap (Apply to Div)
+
+### Space-V - Create vertical gap (Apply to Div)
+```
 .space-v-s : adds margin top child 16px
 .space-v-m : adds margin top child 24px
 .space-v-l : adds margin top child 32px
 .space-v-xl : adds margin top child 48px
-
+```
 Space-H - Create horizontal gap (Apply to Div)
 .space-h-s : adds margin left child 16px
 .space-h-m : adds margin left child 24px
