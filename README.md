@@ -89,6 +89,8 @@ CSS | What it does
 .space-h-l | adds margin left child 32px
 .space-h-xl | adds margin left child 48px
 
+## Width System
+
 
 ## 3. Padding spacing
 CSS | What it does 
@@ -104,12 +106,12 @@ CSS | What it does
 .pad-v-l | adds padding vertically, top and bottom 32px 
 .pad-v-xl | adds padding vertically, top and bottom 48px 
 
-// Not in use padding left
-.pad-h-xs | adds padding horizontally, left and right 12px 
-.pad-h-s | adds padding horizontally, left and right 16px 
-.pad-h-m | adds padding horizontally, left and right 24px 
-.pad-h-l | adds padding horizontally, left and right 32px 
-.pad-h-xl | adds padding horizontally, left and right 48px 
+~~Not in use padding left~~
+~~.pad-h-xs | adds padding horizontally, left and right 12px~~ 
+~~.pad-h-s | adds padding horizontally, left and right 16px~~ 
+~~.pad-h-m | adds padding horizontally, left and right 24px~~ 
+~~.pad-h-l | adds padding horizontally, left and right 32px~~ 
+~~.pad-h-xl | adds padding horizontally, left and right 48px~~
 
 You can use variable xs, s, m, l, xl, xxl, xxxl for example
 ```
