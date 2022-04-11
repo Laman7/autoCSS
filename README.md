@@ -106,7 +106,7 @@ CSS | What it does
 .pad-v-l | adds padding vertically, top and bottom 32px 
 .pad-v-xl | adds padding vertically, top and bottom 48px 
 
-~~Not in use padding left~~
+Not in use padding left
 ~~.pad-h-xs | adds padding horizontally, left and right 12px~~ 
 ~~.pad-h-s | adds padding horizontally, left and right 16px~~ 
 ~~.pad-h-m | adds padding horizontally, left and right 24px~~ 
