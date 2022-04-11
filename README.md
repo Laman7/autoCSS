@@ -69,8 +69,8 @@ CSS | what it does
 
 # Spacing Classes
 
-## 1. Space-V - Create vertical gap (Apply to Div)
-Don't apply it to section. 
+## 1. Space-V - Create Automatic vertical gap
+Apply at Div. Don't apply it to section. All elements in Div (child) is subjected to space. Similar name: Owl system
 
 CSS | What it does 
 --- | --- 
@@ -79,9 +79,8 @@ CSS | What it does
 .space-v-l | adds margin top child 32px
 .space-v-xl | adds margin top child 48px
 
-## 2. Space-H - Create horizontal gap (Apply to Div)
-
-Not currently in used
+## 2. Space-H - Create Horizontal Automatic (left) gap
+Apply at Div. Don't apply to section. All elements in Div (child) is subjected to space. Similar name: Owl system
 
 CSS | What it does 
 --- | --- 
