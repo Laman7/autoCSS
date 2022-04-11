@@ -16,9 +16,11 @@
 
 ### Define the Primary Color
 
-## Font size 
-Applied to any text
-.text-xxxl : 112px
+## Font Size
+
+Font size is determined by 16px, 8 pt system and Geometric Pattern. Applied to any text
+
+```.text-xxxl : 112px
 h1, .text-xxl :80px
 h2, .text-xl :48px
 h3, .text-l :32px
@@ -26,9 +28,9 @@ h4, .text-m :24px
 body: 18px
 h5, h6, .text-s :16px
 .text-xs :12px
-h1 h2 h3 default : Line height 1em, letter spacing: -0.025
+h1 h2 h3 default : Line height 1em, letter spacing: -0.025```
 
-## Text
+## Text Classes
 .text-larger : current font size x2
 .text-smaller : current font size x 0.875
 .text-lighter : font text weight 100
