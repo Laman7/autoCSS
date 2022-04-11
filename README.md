@@ -110,7 +110,7 @@ CSS | What it does
 .pad-h-l | adds padding horizontally, left and right 32px 
 .pad-h-xl | adds padding horizontally, left and right 48px 
 
-# Section spacing
+## 4. Section spacing
 CSS | What it does 
 --- | --- 
 .section-pad-s | adds padding 48px top and bottom
@@ -118,14 +118,15 @@ CSS | What it does
 .section-pad-l | adds padding 96px top and bottom
 .section-pad-xl | adds padding 192px top and bottom
 
-Centering
+## 5. Centering
 CSS | What it does 
 --- | --- 
 .center-all | centers everything in container, vertical and horizontal
 .center-y | centers element to horizontal
 .center-x | centers element to vertical
 
-Sticky
+## 6. Sticky
+
 CSS | What it does 
 --- | --- 
 .sticky | Stick up
@@ -165,8 +166,8 @@ CSS | What it does
 .rounded-circle | Border radius of 50%
 
 ## Defaults
-Table - Based on MVP
-Blockquote - Based on MVP
-Form - Based on MVP
-ul li ol li - Based on MVP
-Animate – All links are animated
+- Table - Based on MVP
+- Blockquote - Based on MVP
+- Form - Based on MVP
+- ul li ol li - Based on MVP
+- Animate – All links are animated
