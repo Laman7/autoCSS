@@ -34,11 +34,12 @@ h1 h2 h3 default line height: 1em, letter spacing: -0.025
 ```
 
 ## Text Classes
-
- .text-larger | current font size x2 | double the text size
- .text-smaller | current font size x 0.875 | what ever it does.
- .text-lighter | font text weight 100 | make it lighter
- .text-light | font text weight 200 | what ever this means
+CSS | what it does | where to use it
+--- | --- | ---
+.text-larger | current font size x2 | double the text size
+.text-smaller | current font size x 0.875 | what ever it does.
+.text-lighter | font text weight 100 | make it lighter
+.text-light | font text weight 200 | what ever this means
 
 | .text-bold | font text weight 700 |
 | .text-bolder | font text weight 900 |
