@@ -4,15 +4,14 @@
 
 ### Conditions
 - Designed to fit 1400px screen 
-- Full 12 grid: 1312px
-- Column is 80 px, gutter is 32px; Total is 112px 
+- Full 12 grid size 1312px with 80px Column and 32px Gutter; Total is 112px per Column.
 - Break even point
 -- 1312px
 -- Tablet: 992px
 -- Landscape: 768px
 -- Portrait: 480px
 
-~~ Steps - Define the Primary Color  ~~
+~~Steps - Define the Primary Color ~~
 
 # Font Size
 
@@ -91,65 +90,79 @@ CSS | What it does
 
 
 Padding spacing
-.pad-xs : adds padding all 12px 
-.pad-s : adds padding all 16px 
-.pad-m : adds padding all 24px 
-.pad-l : adds padding all 32px 
-.pad-xl : adds padding all 48px 
+CSS | What it does 
+--- | --- 
+.pad-xs | adds padding all 12px 
+.pad-s | adds padding all 16px 
+.pad-m | adds padding all 24px 
+.pad-l | adds padding all 32px 
+.pad-xl | adds padding all 48px 
 
-.pad-v-xs : adds padding vertically, top and bottom 12px 
-.pad-v-s : adds padding vertically, top and bottom 16px 
-.pad-v-m : adds padding vertically, top and bottom 24px 
-.pad-v-l : adds padding vertically, top and bottom 32px 
-.pad-v-xl : adds padding vertically, top and bottom 48px 
+.pad-v-xs | adds padding vertically, top and bottom 12px 
+.pad-v-s | adds padding vertically, top and bottom 16px 
+.pad-v-m | adds padding vertically, top and bottom 24px 
+.pad-v-l | adds padding vertically, top and bottom 32px 
+.pad-v-xl | adds padding vertically, top and bottom 48px 
 
 // Not in use padding left
-.pad-h-xs : adds padding horizontally, left and right 12px 
-.pad-h-s : adds padding horizontally, left and right 16px 
-.pad-h-m : adds padding horizontally, left and right 24px 
-.pad-h-l : adds padding horizontally, left and right 32px 
-.pad-h-xl : adds padding horizontally, left and right 48px 
+.pad-h-xs | adds padding horizontally, left and right 12px 
+.pad-h-s | adds padding horizontally, left and right 16px 
+.pad-h-m | adds padding horizontally, left and right 24px 
+.pad-h-l | adds padding horizontally, left and right 32px 
+.pad-h-xl | adds padding horizontally, left and right 48px 
 
 Section spacing
-.section-pad-s : adds padding 48px top and bottom
-.section-pad-m : adds padding 96px top and bottom
-.section-pad-l : adds padding 96px top and bottom
-.section-pad-xl : adds padding 192px top and bottom
+CSS | What it does 
+--- | --- 
+.section-pad-s | adds padding 48px top and bottom
+.section-pad-m | adds padding 96px top and bottom
+.section-pad-l | adds padding 96px top and bottom
+.section-pad-xl | adds padding 192px top and bottom
 
 Centering
-.center-all : centers everything in container, vertical and horizontal
-.center-y : centers element to horizontal
-.center-x : centers element to vertical
+CSS | What it does 
+--- | --- 
+.center-all | centers everything in container, vertical and horizontal
+.center-y | centers element to horizontal
+.center-x | centers element to vertical
 
 Sticky
-.sticky : Stick up
-.sticky-top-s : from top 2.5%
-.sticky-top-m : from top 5%
-.sticky-top-l : from top 10%
+CSS | What it does 
+--- | --- 
+.sticky | Stick up
+.sticky-top-s | from top 2.5%
+.sticky-top-m | from top 5%
+.sticky-top-l | from top 10%
 
 Button
-.btn-primary : Rounded button with primary color
-.btn-secondary : Rounded button with secondary color
-.btn-accent : Rounded button with accent color
-.btn-outline : Outline rounded button with color
-.btn-xs : Button size based on font size 12px
-.btn-s : Button size based on font size 16px
-.btn-m : Button size based on font size 24px
-.btn-l : Button size based on font size 32px
+CSS | What it does 
+--- | --- 
+.btn-primary | Rounded button with primary color
+.btn-secondary | Rounded button with secondary color
+.btn-accent | Rounded button with accent color
+.btn-outline | Outline rounded button with color
+.btn-xs | Button size based on font size 12px
+.btn-s | Button size based on font size 16px
+.btn-m | Button size based on font size 24px
+.btn-l | Button size based on font size 32px
 
 Link
+CSS | What it does 
+--- | --- 
 Link default color is primary color
-.link-primary : Font color primary (just in case)
-.link-secondary : Font color is secondary
-.link-accent : Font color is accent
+.link-primary | Font color primary (just in case)
+.link-secondary | Font color is secondary
+.link-accent | Font color is accent
 
 Rounded
-.rounded-s : Border radius of 4px
-.rounded-m : Border radius of 8px
-.rounded-l : Border radius of 16px
-.rounded-xl : Border radius of 32px
-.rounded-xxl : Border radius of 64px
-.rounded-circle : Border radius of 50%
+CSS | What it does 
+--- | --- 
+.rounded-s | Border radius of 4px
+.rounded-m | Border radius of 8px
+.rounded-l | Border radius of 16px
+.rounded-xl | Border radius of 32px
+.rounded-xxl | Border radius of 64px
+.rounded-circle | Border radius of 50%
 
 Table - Based on MVP
 Blockquote - Based on MVP
