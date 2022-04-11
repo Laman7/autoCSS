@@ -20,7 +20,8 @@
 
 Font size is determined by 16px, 8 pt system and Geometric Pattern. Applied to any text
 
-```.text-xxxl : 112px
+```
+.text-xxxl : 112px
 h1, .text-xxl :80px
 h2, .text-xl :48px
 h3, .text-l :32px
