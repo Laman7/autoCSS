@@ -90,17 +90,17 @@ CSS | What it does
 .space-h-xl | adds margin left child 48px
 
 ## Width and Card
-With can be applied to Divs
+This can be applied to Divs. Based on 12 grid, 112px per column minus 32px
 CSS | What it does 
 --- | --- 
-.width-xs | Size of 2 colomns, px
-.width-s | Size of 3 colomns, px
-.width-m | Size of 4 colomns, px
-.width-l | Size of 6 colomns, px
-.width-xl | Size of 8 colomns, px
-
-
-.card
+.width-xs | Size of 2 columns, 192px
+.width-s, .width-25 | Size of 3 columns, 304px (25%)
+.width-m | Size of 4 columns, 448px
+.width-l, width-50| Size of 6 columns, 640px (50%)
+.width-xl | Size of 8 columns, 864px
+.width-xxl | Size of 10 columns, 1088px
+.width-full, .width-100 | 100% full width
+.card | looks like card layoout
 
 ## Div Padding
 ### Padding All

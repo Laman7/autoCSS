@@ -224,44 +224,27 @@ section{
 
 /* Width System */
 
-.width-xs:not([class*="breakout--"]) {
-    width: 100%;
-    max-width: 12rem;
+.width-xs {
+    width: 12rem;
 }
-.width-s:not([class*="breakout--"]) {
-    width: 100%;
-    max-width: 19rem;
+.width-s,.width-25 {
+    width: 19rem;
 }
-.width-m:not([class*="breakout--"]) {
-    width: 100%;
-    max-width: 28rem;
+.width-m {
+    width: 28rem;
 }
-.width-l:not([class*="breakout--"]) {
-    width: 100%;
-    max-width: 40rem;
+.width-l,.width-50 {
+    width: 40rem;
 }
-.width-xl:not([class*="breakout--"]) {
-    width: 100%;
-    max-width: 54rem;
+.width-xl {
+    width: 54rem;
 }
-
-.width-vp-max:not([class*="breakout--"]) {
-    width: 100%;
-    max-width: calc((128 - 3 * 2) * 1rem);
-    margin-left: auto;
-    margin-right: auto;
+.width-xxl {
+    width: 68rem;
 }
-.width-50:not([class*="breakout--"]) {
-    width: 100%;
-    max-width: calc((128 / 2) * 1rem);
-}
-.width-full:not([class*="breakout--"]) {
+.width-full, .width-100 {
     width: 100%;
     max-width: 100%;
-}
-.width-auto {
-    width: auto !important;
-    width: 100%;
 }
 .card {
     background-color: var(--white);
