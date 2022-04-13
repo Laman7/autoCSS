@@ -42,7 +42,7 @@ button,input,select, textarea{font:inherit}
     --body: 1.125rem    /*18px*/;
     --s: 1rem          /*16px*/;
     --xs:0.75rem         /*12px*/;
-    --lh-heading: 1em;
+    --lh-heading: 1.1em;
     --lh-body: 1.5em;
 	--ls-heading:-0.025em;
 
@@ -62,9 +62,6 @@ button,input,select, textarea{font:inherit}
 }
 
 /*Typography*/
-html{
-    background-color: --base;
-}
 body {
     font-size: var(--body);
     font-size: var(--clamp-body);
@@ -187,7 +184,7 @@ h1,h2,h3 {line-height: var(--lh-heading); letter-spacing: var(--ls-heading);}
 .base {color: var(--base)}
 
 /* Space System */
-
+/* Works like owl system */
 .space-v-s:not(.ct-section) > * + * {
     margin-top: var(--s);
     margin-top: var(--clamp-s);
@@ -229,27 +226,23 @@ section{
 
 .width-xs:not([class*="breakout--"]) {
     width: 100%;
-    
-    max-width: 22rem;
+    max-width: 12rem;
 }
 .width-s:not([class*="breakout--"]) {
     width: 100%;
-   
-    max-width: 26rem;
+    max-width: 19rem;
 }
 .width-m:not([class*="breakout--"]) {
     width: 100%;
-    max-width: 40rem;
+    max-width: 28rem;
 }
 .width-l:not([class*="breakout--"]) {
     width: 100%;
-    /* max-width: calc((128 * 0.6) * 1rem); */
-    max-width: 54rem;
+    max-width: 40rem;
 }
 .width-xl:not([class*="breakout--"]) {
     width: 100%;
-    /* max-width: calc((128 * 0.8) * 1rem); */
-    max-width: 68rem;
+    max-width: 54rem;
 }
 
 .width-vp-max:not([class*="breakout--"]) {
@@ -301,28 +294,28 @@ section{
 }
 
 .pad-v-xs:not(.ct-section) {
-    padding: var(--xs) 1.5rem;
-    padding: var(--clamp-xs) 1.5rem;
+    padding: var(--xs) 1rem;
+    padding: var(--clamp-xs) 1rem;
 }
 .pad-v-s:not(.ct-section) {
-    padding: var(--s) 1.5rem;
-    padding: var(--clamp-s) 1.5rem;
+    padding: var(--s) 1rem;
+    padding: var(--clamp-s) 1rem;
 }
 .pad-v-m:not(.ct-section) {
-    padding: var(--m) 1.5rem;
-    padding: var(--clamp-m) 1.5rem;
+    padding: var(--m) 1rem;
+    padding: var(--clamp-m) 1rem;
 }
 .pad-v-l:not(.ct-section) {
-    padding: var(--l) 1.5rem;
-    padding: var(--clamp-l) 1.5rem;
+    padding: var(--l) 1rem;
+    padding: var(--clamp-l) 1rem;
 }
 .pad-v-xl:not(.ct-section) {
-    padding: var(--xl) 1.5rem;
-    padding: var(--clamp-xl) 1.5rem;
+    padding: var(--xl) 1rem;
+    padding: var(--clamp-xl) 1rem;
 }
 /* 
 .pad-h-xs {
-    padding: var(--xs) ;
+    padding: unset var(--xs) ;
     padding: var(--clamp-xs);
 }
 .pad-h-s {

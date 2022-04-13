@@ -89,10 +89,20 @@ CSS | What it does
 .space-h-l | adds margin left child 32px
 .space-h-xl | adds margin left child 48px
 
-## Width System
+## Width and Card
+With can be applied to Divs
+CSS | What it does 
+--- | --- 
+.width-xs | Size of 2 colomns, px
+.width-s | Size of 3 colomns, px
+.width-m | Size of 4 colomns, px
+.width-l | Size of 6 colomns, px
+.width-xl | Size of 8 colomns, px
+
+
 .card
 
-## 3. Padding Div
+## Div Padding
 ### Padding All
 This add padding all around div.
 CSS | What it does 
@@ -126,7 +136,7 @@ You can use variable xs, s, m, l, xl, xxl, xxxl for example
 #div123 { margin : var(--xs)}
 ```
 
-## 4. Section Padding
+## Section Padding
 CSS | What it does 
 --- | --- 
 .section-pad-s | adds padding 48px top and bottom
@@ -134,7 +144,7 @@ CSS | What it does
 .section-pad-l | adds padding 96px top and bottom
 .section-pad-xl | adds padding 192px top and bottom
 
-## 5. Centering
+## Centering
 CSS | What it does 
 --- | --- 
 .center-all | centers everything in container, vertical and horizontal
