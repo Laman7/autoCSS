@@ -1,6 +1,7 @@
-# Auto CSS
+# Auto CSS (v.1)
 
 ## To make development quicker and easier for developer.
+Systematic approach to web development instead of manually adding padding, margin and sizing.
 
 ### Conditions
 - Designed to fit 1400px screen 
