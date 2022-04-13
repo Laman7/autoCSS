@@ -92,7 +92,9 @@ CSS | What it does
 ## Width System
 .card
 
-## 3. Padding spacing
+## 3. Padding Div
+### Padding All
+This add padding all around div.
 CSS | What it does 
 --- | --- 
 .pad-xs | adds padding all 12px 
@@ -100,6 +102,12 @@ CSS | What it does
 .pad-m | adds padding all 24px 
 .pad-l | adds padding all 32px 
 .pad-xl | adds padding all 48px 
+
+### Padding Vertical 
+This add padding top and bottom. (with default left-right 16px)
+
+CSS | What it does 
+--- | --- 
 .pad-v-xs | adds padding vertically, top and bottom 12px 
 .pad-v-s | adds padding vertically, top and bottom 16px 
 .pad-v-m | adds padding vertically, top and bottom 24px 
@@ -118,7 +126,7 @@ You can use variable xs, s, m, l, xl, xxl, xxxl for example
 #div123 { margin : var(--xs)}
 ```
 
-## 4. Section spacing
+## 4. Section Padding
 CSS | What it does 
 --- | --- 
 .section-pad-s | adds padding 48px top and bottom
