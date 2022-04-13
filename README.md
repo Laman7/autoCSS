@@ -6,7 +6,7 @@
 - Designed to fit 1400px screen 
 - Full 12 grid size 1312px with 80px Column and 32px Gutter; Total is 112px per Column.
 - Break even point
-⋅⋅⋅ Desktop: 1312px
+... Desktop: 1312px
 ⋅⋅⋅ Tablet: 992px
 ⋅⋅⋅ Landscape: 768px
 - Portrait: 480px
