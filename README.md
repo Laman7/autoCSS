@@ -6,12 +6,15 @@
 - Designed to fit 1400px screen 
 - Full 12 grid size 1312px with 80px Column and 32px Gutter; Total is 112px per Column.
 - Break even point
--- 1312px
--- Tablet: 992px
--- Landscape: 768px
--- Portrait: 480px
+..- 1312px
+..- Tablet: 992px
+..* Landscape: 768px
+..* Portrait: 480px
 
-~~Steps - Define the Primary Color ~~
+## Steps
+1. Get color code from Mycolorspace (https://mycolor.space/)
+2. Change the variable in line 26-47
+3. Load the CSS first before style.css
 
 # Font Size
 
@@ -67,9 +70,8 @@ CSS | what it does
 .accent | change color to accent
 .base | change color to base
 
-# Spacing Classes
 
-## 1. Space-V - Create Automatic vertical gap
+## Auto Spacing Vertical Elements
 Apply at Div. Don't apply it to section. All elements in Div (child) is subjected to space. Similar name: Owl system
 
 CSS | What it does 
@@ -79,7 +81,7 @@ CSS | What it does
 .space-v-l | adds margin top child 32px
 .space-v-xl | adds margin top child 48px
 
-## 2. Space-H - Create Horizontal Automatic (left) gap
+## Auto Spacing Horizontal Elements
 Apply at Div. Don't apply to section. All elements in Div (child) is subjected to space. Similar name: Owl system
 
 CSS | What it does 
