@@ -420,7 +420,7 @@ section{
 .btn-primary {
     background-color: var(--primary);
     border: 0.125em solid var(--primary);
-    padding: 1em 1.5em;
+    padding: .5em 1em;
     border-radius: 30rem;
     font-size: var(--body);
     font-size: var(--clamp-body);
@@ -433,7 +433,7 @@ section{
 .btn-secondary {
     background-color: var(--secondary);
     border: 0.125em solid var(--secondary);
-    padding: 1em 1.5em;
+    padding: .5em 1em;
     border-radius: 30rem;
     font-size: var(--body);
     font-size: var(--clamp-body);
@@ -445,7 +445,7 @@ section{
 .btn-accent {
     background-color: var(--accent);
     border: 0.125em solid var(--accent);
-    padding: 1em 1.5em;
+    padding: .5em 1em;
     border-radius: 30rem;
     font-size: var(--body);
     font-size: var(--clamp-body);
@@ -463,19 +463,19 @@ section{
 .btn-s {
     font-size: var(--s);
     font-size: var(--clamp-s);
-    padding: 1em 1.5em;
+    padding: .5em 1em;
     cursor: pointer;
 }
 .btn-m {
     font-size: var(--m);
     font-size: var(--clamp-m);
-    padding: 1em 1.5em;
+    padding: .5em 1em;
     cursor: pointer;
 }
 .btn-l {
     font-size: var(--l);
     font-size: var(--clamp-l);
-    padding: 1em 1.5em;
+    padding: .5em 1em;
     cursor: pointer;
 }
 .btn-box {
