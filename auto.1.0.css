@@ -60,6 +60,9 @@ button,input,select, textarea{font:inherit}
     --width-content: 1080px;
 
 }
+html {
+	scroll-behavior: smooth;
+}
 
 /*Typography*/
 body {
