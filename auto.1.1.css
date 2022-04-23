@@ -1,27 +1,3 @@
-*,::after,::before{box-sizing:border-box}
-body{min-height:100vh; text-rendering:optimizeSpeed}
-img,picture{max-width:100%}
-button,input,select, textarea{font:inherit}
-@media (prefers-reduced-motion: reduce) {
-    html:focus-within {
-        scroll-behavior: auto;
-    }
-    *,
-    *::before,
-    *::after {
-        -webkit-animation-duration: 0.01ms !important;
-        animation-duration: 0.01ms !important;
-        -webkit-animation-iteration-count: 1 !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-        scroll-behavior: auto !important;
-    }
-}
-:focus,button:focus{outline-offset:.5rem;outline:var(--primary) solid .2rem}
-:focus:not(:focus-visible),button:focus:not(:focus-visible){outline-offset:.5rem;outline:var(--primary) solid .2rem}
-:-moz-focus-inner{outline:.2rem solid var(--primary)!important;outline-offset:.5rem}
-:focus:not(:focus-visible){outline:0}
-
 :root {
     --primary: #4285F4;
     --secondary: #00257E;
@@ -60,6 +36,29 @@ button,input,select, textarea{font:inherit}
     --width-content: 1080px;
 
 }
+*,::after,::before{box-sizing:border-box}
+body{min-height:100vh; text-rendering:optimizeSpeed}
+img,picture{max-width:100%}
+button,input,select, textarea{font:inherit}
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+        -webkit-animation-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        -webkit-animation-iteration-count: 1 !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+:focus,button:focus{outline-offset:.5rem;outline:var(--primary) solid .2rem}
+:focus:not(:focus-visible),button:focus:not(:focus-visible){outline-offset:.5rem;outline:var(--primary) solid .2rem}
+:-moz-focus-inner{outline:.2rem solid var(--primary)!important;outline-offset:.5rem}
+:focus:not(:focus-visible){outline:0}
 html {
 	scroll-behavior: smooth;
 }
