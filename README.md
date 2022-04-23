@@ -96,12 +96,12 @@ CSS | What it does
 This can be applied to Divs. Based on 12 grid, 112px per column minus 32px
 CSS | What it does 
 --- | --- 
-.width-xs | Size of 2 columns, 192px
-.width-s, .width-25 | Size of 3 columns, 304px (25%)
-.width-m | Size of 4 columns, 448px
-.width-l, width-50| Size of 6 columns, 640px (50%)
-.width-xl | Size of 8 columns, 864px
-.width-xxl | Size of 10 columns, 1088px
+.width-xs, .width-2 | Size of 2 columns, 192px
+.width-s, .width-25, .width-3 | Size of 3 columns, 304px (25%)
+.width-m, .width-4 | Size of 4 columns, 448px
+.width-l, width-50 ,.width-6| Size of 6 columns, 640px (50%)
+.width-xl, .width-8 | Size of 8 columns, 864px
+.width-xxl, .width-10 | Size of 10 columns, 1088px
 .width-full, .width-100 | 100% full width
 .card | looks like card layoout
 
