@@ -1,4 +1,4 @@
-# Auto CSS (v.1)
+# Auto CSS (v1.1)
 
 ## To make development quicker and easier for developer.
 Systematic approach to web development instead of manually adding padding, margin and sizing.
@@ -124,19 +124,21 @@ CSS | What it does
 .pad-v-xs | adds padding vertically, top and bottom 12px 
 .pad-v-s | adds padding vertically, top and bottom 16px 
 .pad-v-m | adds padding vertically, top and bottom 24px 
-.pad-v-l | adds padding vertically, top and bottom 32px 
+.pad-v-l,.pad-v | adds padding vertically, top and bottom 32px 
 .pad-v-xl | adds padding vertically, top and bottom 48px 
 
-Not in use padding left
-~~.pad-h-xs | adds padding horizontally, left and right 12px~~ 
-~~.pad-h-s | adds padding horizontally, left and right 16px~~ 
-~~.pad-h-m | adds padding horizontally, left and right 24px~~ 
-~~.pad-h-l | adds padding horizontally, left and right 32px~~ 
-~~.pad-h-xl | adds padding horizontally, left and right 48px~~
+CSS | What it does 
+--- | --- 
+.pad-h-xs | adds padding horizontally, left and right 12px 
+.pad-h-s, .pad-h | adds padding horizontally, left and right 16px 
+.pad-h-m | adds padding horizontally, left and right 24px 
+.pad-h-l | adds padding horizontally, left and right 32px 
+.pad-h-xl | adds padding horizontally, left and right 48px
 
-You can use variable xs, s, m, l, xl, xxl, xxxl for example
+You can use variable xs, s, m, l, xl, xxl, xxxl or clamp for example
 ```
-#div123 { margin : var(--xs)}
+#div-box { margin : var(--xs)}
+#div-box { margin: var(--clamp-xl)}
 ```
 
 ## Section Padding
