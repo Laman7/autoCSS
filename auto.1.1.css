@@ -395,7 +395,7 @@ section{
     justify-content: center;
     align-items: flex-start;
 }
-.center-x:not(.ct-section),
+.center-h:not(.ct-section),
 .ct-section.center-x > .ct-section-inner-wrap {
     display: flex;
     flex-direction: column;
@@ -405,8 +405,8 @@ section{
 }
 
 @media (max-width: 991px) {
-    .center-all-l:not(.ct-section),
-    .ct-section.center-all-l > .ct-section-inner-wrap {
+    .center-all:not(.ct-section),
+    .ct-section.center-all > .ct-section-inner-wrap {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -415,15 +415,15 @@ section{
         justify-content: center;
         text-align: center;
     }
-    .center-y-l:not(.ct-section),
-    .ct-section.center-y-l > .ct-section-inner-wrap {
+    .center-y:not(.ct-section),
+    .ct-section.center-y > .ct-section-inner-wrap {
         flex-direction: column;
         justify-items: center;
         justify-content: center;
         align-items: flex-start;
     }
-    .center-x-l:not(.ct-section),
-    .ct-section.center-x-l > .ct-section-inner-wrap {
+    .center-h:not(.ct-section),
+    .ct-section.center-h > .ct-section-inner-wrap {
         display: flex;
         flex-direction: column;
         justify-items: center;

@@ -153,8 +153,9 @@ CSS | What it does
 CSS | What it does 
 --- | --- 
 .center-all | centers everything in container, vertical and horizontal
-.center-y | centers element to horizontal
-.center-x | centers element to vertical
+.center-h | centers element to horizontal
+.center-v | centers element to vertical
+.center-self | applies margin auto
 
 ## 6. Sticky
 
