@@ -32,7 +32,7 @@ body {
     font-size: var(--clamp-body);
     color: var(--body-color);
     line-height: var(--lh-body);
-    background-color: var(--base);
+    /* background-color: var(--base); */
 }
 .text-xxxl {
     font-size: var(--xxxl);
@@ -73,6 +73,9 @@ h1,h2,h3 {line-height: var(--lh-heading); letter-spacing: var(--ls-heading);}
 }
 .text-light {
     font-weight: 200;
+}
+.text-normal {
+    font-weight: 400;
 }
 .text-bold {
     font-weight: 700;
@@ -198,7 +201,7 @@ section{
     width: 19rem;
 }
 .width-m, .width-4 {
-    width: 28rem;
+    width: 26rem;
 }
 .width-l,.width-50, .width-6 {
     width: 40rem;

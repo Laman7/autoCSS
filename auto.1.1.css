@@ -36,6 +36,7 @@
     --width-content: 1080px;
 
 }
+/* Be sure AutoCSS loads before this */
 *,::after,::before{box-sizing:border-box}
 body{min-height:100vh; text-rendering:optimizeSpeed}
 img,picture{max-width:100%}
@@ -69,7 +70,7 @@ body {
     font-size: var(--clamp-body);
     color: var(--body-color);
     line-height: var(--lh-body);
-    background-color: var(--base);
+    /* background-color: var(--base); */
 }
 .text-xxxl {
     font-size: var(--xxxl);
@@ -110,6 +111,9 @@ h1,h2,h3 {line-height: var(--lh-heading); letter-spacing: var(--ls-heading);}
 }
 .text-light {
     font-weight: 200;
+}
+.text-normal {
+    font-weight: 400;
 }
 .text-bold {
     font-weight: 700;
@@ -184,6 +188,8 @@ h1,h2,h3 {line-height: var(--lh-heading); letter-spacing: var(--ls-heading);}
 .secondary {color: var(--secondary)}
 .accent {color: var(--accent)}
 .base {color: var(--base)}
+.white, .light {color: var(--white);}
+.black, .dark {color: var(--black);}
 
 /* Space System */
 /* Works like owl system */
@@ -226,22 +232,22 @@ section{
 
 /* Width System */
 
-.width-xs {
+.width-xs, .width-2 {
     width: 12rem;
 }
-.width-s,.width-25 {
+.width-s,.width-25, .width-3 {
     width: 19rem;
 }
-.width-m {
-    width: 28rem;
+.width-m, .width-4 {
+    width: 26rem;
 }
-.width-l,.width-50 {
+.width-l,.width-50, .width-6 {
     width: 40rem;
 }
-.width-xl {
+.width-xl, .width-8 {
     width: 54rem;
 }
-.width-xxl {
+.width-xxl, .width-10 {
     width: 68rem;
 }
 .width-full, .width-100 {
