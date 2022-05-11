@@ -1,11 +1,11 @@
 :root {
-    --primary: #4285F4;
-    --secondary: #00257E;
-    --accent: #C8A762;
-    --base: #E6F4F1;
+    --primary: #615DFF;
+    --secondary: #78BBE6;
+    --accent: #FF895D;
+    --base: #D5EEFF;
     --white: #fff;
     --black: #111;
-    --body-color: #111;
+    --body-color: #1B435D;
     --body-mute: #333;
     --grey: #ededed;
     --hover-brightness: 1.3;
@@ -21,6 +21,7 @@
     --lh-heading: 1.1em;
     --lh-body: 1.5em;
 	--ls-heading:-0.025em;
+	--btn-radius: 2rem;
 
     --clamp-xs: clamp(0.625rem, calc(0.625rem + ((1vw - 0.3rem) * 0.2404)), var(--xs));
     --clamp-s: clamp(0.875rem, calc(0.875rem + ((1vw - 0.3rem) * 0.2404)), var(--s));
@@ -36,7 +37,7 @@
     --width-content: 1080px;
 
 }
-/* Be sure AutoCSS loads before this */
+/* Be sure AutoCSS variables above the line or loads before this */
 *,::after,::before{box-sizing:border-box}
 body{min-height:100vh; text-rendering:optimizeSpeed}
 img,picture{max-width:100%}
@@ -60,6 +61,9 @@ button,input,select, textarea{font:inherit}
 :focus:not(:focus-visible),button:focus:not(:focus-visible){outline-offset:.5rem;outline:var(--primary) solid .2rem}
 :-moz-focus-inner{outline:.2rem solid var(--primary)!important;outline-offset:.5rem}
 :focus:not(:focus-visible){outline:0}
+/* Oxygen reset */
+.ct-text-block {padding: 0;}
+
 html {
 	scroll-behavior: smooth;
 }
@@ -268,7 +272,6 @@ section{
 }
 
 /* Padding */
-
 .pad-xs:not(.ct-section) {
     padding: var(--xs);
     padding: var(--clamp-xs);
@@ -452,43 +455,107 @@ section{
 }
 
 /* Button */
-
+.btn-primary, .btn-secondary, .btn-accent {line-height: 1em;}
 .btn-primary {
     background-color: var(--primary);
-    border: 0.125em solid var(--primary);
-    padding: .5em 1em;
-    border-radius: 30rem;
     font-size: var(--body);
     font-size: var(--clamp-body);
 }
+.btn-primary,.btn-secondary,.btn-accent {
+	z-index:1;
+	border: none;
+    padding: 1em 1.5em;
+	transition: all 0.5s;
+	border:none;
+	overflow: hidden;
+	position: relative;
+	text-decoration:none;
+	border-radius: var(--btn-radius);
+}
+.btn-primary::before,.btn-secondary::before,.btn-accent::before {
+	content: "";
+	position: absolute; 
+	top: 0; left: 0; width: 100%; height: 100%;
+	
+	transition: all 0.5s;
+	z-index: -1;
+	transform: translateX(-110%);
+	border-radius: var(--btn-radius);
+}
+.btn-primary::before {
+	background-color: var(--accent);
+}
+.btn-secondary::before {
+	background-color: var(--primary);
+}
+.btn-accent::before {
+	background-color: var(--black);
+}
+
+.btn-primary:hover::before, .btn-secondary:hover::before, .btn-accent:hover::before {
+  transform: translateX(0);
+}
+.btn-primary:hover,.btn-secondary:hover ,.btn-accent:hover  {
+ padding-right: 3em
+}
+.btn-primary::after, .btn-secondary::after, .btn-accent::after {
+	content:" \2192";
+	position: absolute;
+	right:3em;
+	opacity:0;
+	transition: all .2s;
+}
+.btn-primary:hover::after,.btn-secondary:hover::after,.btn-accent:hover::after{
+	right:1em;
+	opacity:1;
+}
+
 .btn-primary.btn-outline {
     background-color: transparent;
     color: var(--primary);
+	box-shadow: 0 0 0 2px var(--primary)
+}
+.btn-primary.btn-outline::before {
+	background-color: var(--primary);
+}
+.btn-primary.btn-outline:hover {
+	color:var(--white);
+	box-shadow: 0 0 0 2px var(--primary)
 }
 
 .btn-secondary {
     background-color: var(--secondary);
-    border: 0.125em solid var(--secondary);
-    padding: .5em 1em;
-    border-radius: 30rem;
     font-size: var(--body);
     font-size: var(--clamp-body);
 }
 .btn-secondary.btn-outline {
     background-color: transparent;
     color: var(--secondary);
+	box-shadow: 0 0 0 2px var(--secondary)
+}
+.btn-secondary.btn-outline::before {
+	background-color: var(--secondary);
+}
+.btn-secondary.btn-outline:hover {
+	color:var(--white);
+	box-shadow: 0 0 0 2px var(--secondary)
 }
 .btn-accent {
     background-color: var(--accent);
-    border: 0.125em solid var(--accent);
-    padding: .5em 1em;
-    border-radius: 30rem;
     font-size: var(--body);
     font-size: var(--clamp-body);
 }
 .btn-accent.btn-outline {
     background-color: transparent;
     color: var(--accent);
+	box-shadow: 0 0 0 2px var(--accent)
+}
+.btn-accent.btn-outline::before {
+	background-color: var(--accent);
+}
+.btn-accent.btn-outline:hover {
+	color:var(--white);
+	box-shadow: 0 0 0 2px var(--accent)
 }
 .btn-xs {
     font-size: var(--xs);
@@ -505,17 +572,14 @@ section{
 .btn-m {
     font-size: var(--m);
     font-size: var(--clamp-m);
-    padding: .5em 1em;
+    padding: .75em 1.5em;
     cursor: pointer;
 }
 .btn-l {
     font-size: var(--l);
     font-size: var(--clamp-l);
-    padding: .5em 1em;
+    padding: .75em 1.5em;
     cursor: pointer;
-}
-.btn-box {
-    border-radius: 0.5em;
 }
 
 a[class*="btn--"] {
@@ -530,7 +594,7 @@ a {
     transition: all 0.5s;
     color: var(--primary);
 }
-a:hover {
+ax:hover {
     filter: brightness(var(--hover-brightness));
     text-decoration: underline;
 }
