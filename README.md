@@ -1,4 +1,4 @@
-# Auto CSS (v1.1)
+# Auto CSS (v1.3)
 
 ## To make development quicker and easier for developer.
 Systematic approach to web development instead of manually adding padding, margin and sizing.
@@ -16,6 +16,25 @@ Systematic approach to web development instead of manually adding padding, margi
 1. Get color code from Mycolorspace (https://mycolor.space/)
 2. Change the variable in line 26-47
 3. Load the CSS first before style.css
+
+
+# New in 1.3
+
+## Grid
+New grid system adds easier to code from design.
+
+CSS | Grid Behavior
+--- | --- 
+.grid-2 |  Creates 2 columns
+.grid-3 |  Creates 3 columns
+.grid-4 |  Creates 4 columns
+.grid-5 |  Creates 5 columns
+.grid-1-2 |  Creates 1 then 2 spacing (2 columns)
+.grid-1-3 |  Creates 1 then 3 spacing (2 columns)
+.grid-2-1 |  Creates 2 then 1 spacing (2 columns)
+.grid-2-3 |  Creates 2 then 3 spacing (2 columns)
+.grid-3-1 |  Creates 3 then 1 spacing (2 columns)
+.grid-3-2 |  Creates 3 then 2 spacing (2 columns)
 
 # Font Size
 

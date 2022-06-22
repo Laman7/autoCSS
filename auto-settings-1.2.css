@@ -23,10 +23,10 @@
 	--lh-heading: 1.3em;
     --lh-body: 1.5em;
 	--ls-heading:-0.025em;
-    --ls-h1:-0.025em;
+	--ls-h1:-0.025em;
     --ls-h2:-0.025em;
 	--btn-radius: 0rem;
-
+	
     --clamp-xs: clamp(0.625rem, calc(0.625rem + ((1vw - 0.3rem) * 0.2404)), var(--xs));
     --clamp-s: clamp(0.875rem, calc(0.875rem + ((1vw - 0.3rem) * 0.2404)), var(--s));
     --clamp-m: clamp(1.125rem, calc(1.125rem + ((1vw - 0.3rem) * 0.7212)), var(--m));
@@ -39,5 +39,4 @@
     --width-card-m: 40rem;
     --width-card-l: 54rem;
     --width-content: 1080px;
-
 }
