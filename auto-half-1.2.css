@@ -272,7 +272,6 @@ section{
 .cards {
     background-color: var(--white);
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-    margin: 2rem 0;
     border-radius: var(--border-radius);
     border:1px solid #eee;
 }
@@ -337,6 +336,24 @@ section{
     padding: var(--xl);
     padding: var(--clamp-xl);
 }
+.pad-xxl:not(.ct-section) {
+    padding: var(--xxl);
+    padding: var(--clamp-xxl);
+}
+
+@media (max-width: 768px) {
+    .pad-xxl, .pad-xl {
+        padding: var(--m);
+        padding: var(--clamp-m);
+    }
+    .pad-l-none {padding: 0 !important}
+    .grid-l-reverse {order: -1}
+}
+
+@media (max-width: 480px) {
+    .pad-m-none {padding: 0 !important}
+    .grid-m-reverse {order: -1}
+}
 
 .pad-v-xs:not(.ct-section) {
     padding-top: var(--xs);
@@ -367,6 +384,12 @@ section{
     padding-bottom: var(--xl);
     padding-top: var(--clamp-xl);
     padding-bottom: var(--clamp-xl);
+}
+.pad-v-xxl:not(.ct-section) {
+    padding-top: var(--xxl);
+    padding-bottom: var(--xxl);
+    padding-top: var(--clamp-xxl);
+    padding-bottom: var(--clamp-xxl);
 }
 
 .pad-h-xs:not(.ct-section) {
@@ -678,7 +701,7 @@ button:hover {
 .rounded-circle {
     border-radius: 50%;
 }
-
+.rounded-xs, .rounded-s, .rounded-m, .rounded-l, .rounded-xl, .rounded-xxl, .rounded-circle {overflow: hidden;}
 
 /* Tables */
 table {
@@ -773,6 +796,11 @@ form {
     display: block;
     padding: 1.5rem;
 }
+@media (max-width: 480px) {
+    form {
+        padding: 1rem 0;
+    }
+}
 
 form header {
     margin: 1.5rem 0;
@@ -821,3 +849,39 @@ label {
     color: var(--base);
     background: var(--primary);
   }
+
+  /* width */
+::-webkit-scrollbar {
+	width:8px; height:8px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+	background-color: rgba(255,255,255,0.1);
+	border-radius: 8px; border:none;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background-image: linear-gradient( rgba(0,0,0,0.3), rgba(0,0,0,0.3));
+	border-radius:8px;
+	box-shadow: rgba(0,0,0,.12) 0 3px 13px 1px;
+	transition: all 1s;
+}
+::-webkit-scrollbar-thumb:hover,::-webkit-scrollbar-thumb:active {
+	background-image: linear-gradient(45deg, var(--primary), var(--secondary));
+}
+
+.none {display:none}
+.div-relative { position: relative}
+.div-absolute {position: absolute}
+
+.height-25 {min-height: 25vh;}
+.height-50 {min-height: 50vh;}
+.height-60 {min-height: 60vh;}
+.height-75 {min-height: 75vh;}
+.height-80 {min-height: 80vh;}
+.height-100,.height-full {min-height: 100vh;}
+
+.margin-top-5 {margin-top:5vh}
+.margin-top-10 {margin-top:10vh}
+.margin-top-25 {margin-top:25vh}
+
