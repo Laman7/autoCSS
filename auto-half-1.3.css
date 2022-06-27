@@ -1,3 +1,4 @@
+/* Developed by Laman7 */
 /* Be sure AutoCSS variables above the line or loads before this */
 *,::after,::before{box-sizing:border-box}
 body{min-height:100vh; text-rendering:optimizeSpeed}
@@ -24,6 +25,9 @@ button,input,select, textarea{font:inherit}
 :focus:not(:focus-visible){outline:0}
 /* Oxygen reset */
 .ct-text-block {padding: 0;}
+.ct-div-block {width: 100%;
+padding: var(--m) 0;
+padding: var(--clamp-m) 0 }
 
 html {
 	scroll-behavior: smooth;
@@ -213,7 +217,8 @@ section{
 
 /* Width System */
 
-/* .width-xs, .width-2 {
+/* OLD 
+.width-xs, .width-2 {
     width: 12rem;
 }
 .width-s,.width-25, .width-3 {
@@ -254,20 +259,19 @@ section{
     max-width: 100%;
 }
 @media (max-width: 1312px) {
-    .container {max-width: 1200px;}
-    .width-l-3 {width: calc(3*8.3%)}
-    .width-l-6 {width: calc(6*8.3%)}
-    .width-l-9 {width: calc(9*8.3%)}
+    .width-full, .container {max-width: 1200px;}
     .width-l-full {width: 100%;}
 }
 @media (max-width: 992px) {
-    .width-xxl, .width-xl, .width-l, .width-m, .width-xs, .width-xs, .width-50, .width-25, .width-6, .width-8,.width-7, .width-10, .width-100 {width: 100%;}
-    .container {max-width: 768px};
+    .width-full, .container {max-width: 768px}
+    .width-xxl, .width-xl, .width-l, .width-m, .width-xs, .width-xs, .width-50, .width-25, .width-6, .width-7, .width-8, .width-9, .width-10, .width-100 {width: 100%;}
     .width-2, .width-3, .width-4 {width: 50%;}
+}
+@media (max-width:480px) {
     .width-m-3 {width: calc(3*8.3%)}
     .width-m-6 {width: calc(6*8.3%)}
     .width-m-9 {width: calc(9*8.3%)}
-    .width-m-full {width: 100%;}
+    .width-m-full, .width-m-12 {width: 100%;}
 }
 .cards {
     background-color: var(--white);

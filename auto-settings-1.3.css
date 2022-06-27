@@ -1,0 +1,42 @@
+:root {
+    --primary: #615DFF;
+    --secondary: #78BBE6;
+    --accent: #FF895D;
+    --base: #D5EEFF;
+    --white: #fff;
+    --black: #111;
+    --body-color: #1B435D;
+    --body-mute: #333;
+    --grey: #ededed;
+    --hover-brightness: 1.3;
+    --border-radius: 0.5rem;
+    --xxxl: 7rem        /*112px*/;
+    --xxl: 5rem         /*80px*/;
+    --xl: 3rem          /*48px*/;
+    --l: 2rem           /*32px*/;
+    --m: 1.5rem         /*24px*/;
+    --body: 1.125rem    /*18px*/;
+    --s: 1rem          /*16px*/;
+    --xs:0.75rem         /*12px*/;
+    --lh-h1: 1.1em;
+	--lh-h2: 1.3em;
+	--lh-heading: 1.3em;
+    --lh-body: 1.5em;
+	--ls-heading:-0.025em;
+	--ls-h1:-0.025em;
+    --ls-h2:-0.025em;
+	--btn-radius: 0rem;
+	
+    --clamp-xs: clamp(0.625rem, calc(0.625rem + ((1vw - 0.3rem) * 0.2404)), var(--xs));
+    --clamp-s: clamp(0.875rem, calc(0.875rem + ((1vw - 0.3rem) * 0.2404)), var(--s));
+    --clamp-m: clamp(1.125rem, calc(1.125rem + ((1vw - 0.3rem) * 0.7212)), var(--m));
+    --clamp-l: clamp(1.5rem, calc(1.5rem + ((1vw - 0.3rem) * 0.9615)), var(--l));
+    --clamp-xl: clamp(1.75rem, calc(1.75rem + ((1vw - 0.3rem) * 2.4038)), var(--xl));
+    --clamp-xxl: clamp(2.5rem, calc(2.5rem + ((1vw - 0.3rem) * 4.8077)), var(--xxl));
+    --clamp-xxxl: clamp(3rem, calc(3rem + ((1vw - 0.3rem) * 7.6923)), var(--xxxl));
+    --clamp-body: clamp(1rem, calc(1rem + ((1vw - 0.3rem) * 0.2404)), var(--body));
+    --width-card: 26rem;
+    --width-card-m: 40rem;
+    --width-card-l: 54rem;
+    --width-content: 1080px;
+}
