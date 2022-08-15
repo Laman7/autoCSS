@@ -19,6 +19,8 @@ Systematic approach to web development instead of manually adding padding, margi
 
 
 # New in 1.3
+- Grid systems
+- Improvement on .btn, adding btn-white
 
 ## Grid
 New grid system adds easier to code from design.

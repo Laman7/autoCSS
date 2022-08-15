@@ -25,8 +25,6 @@ button,input,select, textarea{font:inherit}
 :focus:not(:focus-visible){outline:0}
 /* Oxygen reset */
 .ct-text-block {padding: 0;}
-padding: var(--m) 0;
-padding: var(--clamp-m) 0 }
 
 html {
 	scroll-behavior: smooth;
@@ -39,6 +37,7 @@ body {
     color: var(--body-color);
     line-height: var(--lh-body);
     /* background-color: var(--base); */
+
 }
 .text-xxxl {
     font-size: var(--xxxl);
@@ -46,6 +45,7 @@ body {
     line-height: var(--lh-h1);
     letter-spacing: var(--ls-h1);
 }
+
 h1, .text-xxl {
     font-size: var(--xxl);
     font-size: var(--clamp-xxl);
@@ -79,7 +79,11 @@ h5, h6, .text-s {
     font-size: var(--xs);
     font-size: var(--clamp-xs);
 }
-
+.text-body {
+    font-size: var(--body);
+    font-size: var(--clamp-body);
+    line-height: var(--lh-body);
+}
 h3 {line-height: var(--lh-heading); letter-spacing: var(--ls-heading);}
 
 /* Text */
@@ -169,6 +173,7 @@ h3 {line-height: var(--lh-heading); letter-spacing: var(--ls-heading);}
 .accent {color: var(--accent)}
 .base {color: var(--base)}
 .white, .light {color: var(--white);}
+.grey, .light {color: var(--grey);}
 .black, .dark {color: var(--black);}
 
 /* Space System */
@@ -399,6 +404,10 @@ section{
     gap: var(--xxl);
     gap: var(--clamp-xxl)
 }
+.gap-none:not(.ct-section) {
+    gap: 0;
+}
+
 
 /* Breakout */
 @media (min-width: 1279px) {
@@ -435,6 +444,9 @@ section{
         max-width: 100% !important;
         margin: 0;
     }
+}
+@media (max-width: 768px) {
+    .breakout-full {margin: 0}
 }
 /* Padding */
 .pad-xs:not(.ct-section) {
@@ -511,6 +523,12 @@ section{
     padding-bottom: var(--xxl);
     padding-top: var(--clamp-xxl);
     padding-bottom: var(--clamp-xxl);
+}
+.pad-v-xxxl:not(.ct-section) {
+    padding-top: var(--xxxl);
+    padding-bottom: var(--xxxl);
+    padding-top: var(--clamp-xxxl);
+    padding-bottom: var(--clamp-xxxl);
 }
 
 .pad-h-xs:not(.ct-section) {
@@ -652,13 +670,13 @@ section{
 }
 
 /* Button */
-.btn-primary, .btn-secondary, .btn-accent {line-height: 1em;}
+.btn-primary, .btn-secondary, .btn-accent, .btn-white {line-height: 1em;}
 .btn-primary {
     background-color: var(--primary);
     font-size: var(--body);
     font-size: var(--clamp-body);
 }
-.btn-primary,.btn-secondary,.btn-accent {
+.btn-primary,.btn-secondary,.btn-accent,.btn-white {
 	z-index:1;
 	border: none;
     padding: 1em 1.5em;
@@ -669,7 +687,7 @@ section{
 	text-decoration:none;
 	border-radius: var(--btn-radius);
 }
-.btn-primary::before,.btn-secondary::before,.btn-accent::before {
+.btn-primary::before,.btn-secondary::before,.btn-accent::before,.btn-white::before {
 	content: "";
 	position: absolute; 
 	top: 0; left: 0; width: 100%; height: 100%;
@@ -687,21 +705,24 @@ section{
 .btn-accent::before {
 	background-color: var(--black);
 }
+.btn-white::before {
+	background-color: var(--white);
+}
 
-.btn-primary:hover::before, .btn-secondary:hover::before, .btn-accent:hover::before {
+.btn-primary:hover::before, .btn-secondary:hover::before, .btn-accent:hover::before, .btn-white:hover::before {
   transform: translateX(0);
 }
-.btn-primary:hover,.btn-secondary:hover ,.btn-accent:hover  {
+.btn-primary:hover,.btn-secondary:hover ,.btn-accent:hover, .btn-white:hover  {
  padding-right: 3em
 }
-.btn-primary::after, .btn-secondary::after, .btn-accent::after {
+.btn-primary::after, .btn-secondary::after, .btn-accent::after, .btn-white::after {
 	content:" \2192";
 	position: absolute;
 	right:3em;
 	opacity:0;
 	transition: all .2s;
 }
-.btn-primary:hover::after,.btn-secondary:hover::after,.btn-accent:hover::after{
+.btn-primary:hover::after,.btn-secondary:hover::after,.btn-accent:hover::after,  .btn-white:hover::after{
 	right:1em;
 	opacity:1;
 }
@@ -709,14 +730,14 @@ section{
 .btn-primary.btn-outline {
     background-color: transparent;
     color: var(--primary);
-	box-shadow: 0 0 0 2px var(--primary)
+	box-shadow: 0 0 0 2px var(--primary) inset
 }
 .btn-primary.btn-outline::before {
 	background-color: var(--primary);
 }
 .btn-primary.btn-outline:hover {
 	color:var(--white);
-	box-shadow: 0 0 0 2px var(--primary)
+	box-shadow: 0 0 0 2px var(--primary) inset
 }
 
 .btn-secondary {
@@ -727,14 +748,14 @@ section{
 .btn-secondary.btn-outline {
     background-color: transparent;
     color: var(--secondary);
-	box-shadow: 0 0 0 2px var(--secondary)
+	box-shadow: 0 0 0 2px var(--secondary) inset
 }
 .btn-secondary.btn-outline::before {
 	background-color: var(--secondary);
 }
 .btn-secondary.btn-outline:hover {
 	color:var(--white);
-	box-shadow: 0 0 0 2px var(--secondary)
+	box-shadow: 0 0 0 2px var(--secondary) inset
 }
 .btn-accent {
     background-color: var(--accent);
@@ -744,14 +765,31 @@ section{
 .btn-accent.btn-outline {
     background-color: transparent;
     color: var(--accent);
-	box-shadow: 0 0 0 2px var(--accent)
+	box-shadow: 0 0 0 2px var(--accent) inset
 }
 .btn-accent.btn-outline::before {
 	background-color: var(--accent);
 }
 .btn-accent.btn-outline:hover {
 	color:var(--white);
-	box-shadow: 0 0 0 2px var(--accent)
+	box-shadow: 0 0 0 2px var(--accent) inset
+}
+.btn-white {
+    background-color: transparent;
+    font-size: var(--body);
+    font-size: var(--clamp-body);
+}
+.btn-white.btn-outline {
+    background-color: transparent;
+    color: var(--white);
+	box-shadow: 0 0 0 2px var(--white) inset
+}
+.btn-white.btn-outline::before {
+	background-color: var(-white);
+}
+.btn-white.btn-outline:hover {
+	color:var(--black);
+	box-shadow: 0 0 0 2px var(--white) inset
 }
 .btn-xs {
     font-size: var(--xs);
