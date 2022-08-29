@@ -448,6 +448,15 @@ section{
 @media (max-width: 768px) {
     .breakout-full {margin: 0}
 }
+@media (max-width: 480px) {
+    .breakout-m-full {
+        width: 100vw !important;
+        max-width: 100vw !important;
+        margin-left: calc(-50vw + 50%) !important;
+        align-self: flex-start;}
+    
+}
+
 /* Padding */
 .pad-xs:not(.ct-section) {
     padding: var(--xs);
