@@ -7,10 +7,10 @@ Systematic approach to web development instead of manually adding padding, margi
 - Designed to fit 1400px screen 
 - Full 12 grid size 1312px with 80px Column and 32px Gutter; Total is 112px per Column.
 - Break even point
-- Desktop: 1312px
-- Tablet: 992px
-- Landscape: 768px
-- Portrait: 480px
+- Desktop: 1312px (-xl)
+- Tablet: 992px (-lg)
+- Landscape: 768px (-md)
+- Portrait/Mobile: 480px (-sm)
 
 ## Steps
 1. Get color code from Mycolorspace (https://mycolor.space/)
@@ -37,6 +37,9 @@ CSS | Grid Behavior
 .grid-2-3 |  Creates 2 then 3 spacing (2 columns)
 .grid-3-1 |  Creates 3 then 1 spacing (2 columns)
 .grid-3-2 |  Creates 3 then 2 spacing (2 columns)
+.grid-xl-reverse ,.grid-lg-reverse |  Reverse the order in 992px size. Apply to child grid.
+.grid-l-reverse ,.grid-md-reverse |  Reverse the order in 768px size. Apply to child grid.
+.grid-m-reverse ,.grid-sm-reverse |  Reverse the order in 480px size. Apply to child grid.
 
 # Font Size
 
@@ -161,6 +164,16 @@ You can use variable xs, s, m, l, xl, xxl, xxxl or clamp for example
 #div-box { margin : var(--xs)}
 #div-box { margin: var(--clamp-xl)}
 ```
+
+### Remove Padding at Breakpoint 
+Remove the padding at certain breakpoint
+
+CSS | What it does 
+--- | --- 
+.pad-l-0, .pad-xl-0, .pad-xl-none | Removes padding at 1312px
+.pad-m-0, .pad-lg-0, .pad-lg-none | Removes padding at 992px
+.pad-md-none, .pad-l-none, .pad-md-0  | Removes padding at 768px
+.pad-sm-none, .pad-m-none, .pad-sm-0 | Removes padding at 480px
 
 ## Section Padding
 CSS | What it does 

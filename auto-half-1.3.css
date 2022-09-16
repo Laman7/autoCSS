@@ -301,7 +301,7 @@ section{
 }
 .grid-2:not(.ct-section) {
     display: grid !important;
-    grid-template-columns: repeat(auto-fit, minmax(min(28rem), 1fr)); 
+    grid-template-columns: repeat(auto-fit, minmax(min(20rem), 1fr)); 
     width: 100%;
 }
 
@@ -483,18 +483,26 @@ section{
     padding: var(--clamp-xxl);
 }
 
+
+@media (max-width: 1312px) {
+    .pad-l-0, .pad-xl-0, .pad-xl-none, {padding: 0;}
+}
+@media (max-width: 992px) {
+    .pad-m-0, .pad-lg-0, .pad-lg-none {padding: 0 !important;}
+    .grid-xl-reverse,  .grid-lg-reverse {order: -1}
+}
+
 @media (max-width: 768px) {
     .pad-xxl, .pad-xl {
         padding: var(--m);
         padding: var(--clamp-m);
     }
-    .pad-l-none {padding: 0 !important}
-    .grid-l-reverse {order: -1}
+    .pad-md-none, .pad-l-none, .pad-md-0 {padding: 0 !important}
+    .grid-l-reverse,  .grid-md-reverse {order: -1}
 }
-
 @media (max-width: 480px) {
-    .pad-m-none {padding: 0 !important}
-    .grid-m-reverse {order: -1}
+    .pad-sm-none, .pad-m-none, .pad-sm-0 {padding: 0 !important}
+     .grid-m-reverse, .grid-sm-reverse {order: -1}
 }
 
 .pad-v-xs:not(.ct-section) {
@@ -572,12 +580,6 @@ section{
 }
 .pad-0 {padding: 0}
 
-@media (max-width: 1312px) {
-    .pad-l-0 {padding: 0;}
-}
-@media (max-width: 992px) {
-    .pad-m-0 {padding: 0 !important;}
-}
 .section-pad-s{
     padding-top: 3rem;
     padding-bottom: 3rem;
