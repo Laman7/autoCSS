@@ -1,9 +1,14 @@
+# AutoCSS (v1.4)
+
+1. Addition of 6 colors (Off colors and Shades of Grey)
+2. Font sizes to match perfect fifth (based on type-scale.com)
+
 # Auto CSS (v1.3)
 
 ## To make development quicker and easier for developer.
 Systematic approach to web development instead of manually adding padding, margin and sizing.
 
-### Conditions
+## Break Points - Conditions
 - Designed to fit 1400px screen 
 - Full 12 grid size 1312px with 80px Column and 32px Gutter; Total is 112px per Column.
 - Break even point
@@ -91,9 +96,21 @@ CSS | what it does
 CSS | what it does 
 --- | --- 
 .primary | change color to primary
+.primary-off | change color to primary
 .secondary | change color to secondary
+.secondary-off | change color to secondary
 .accent | change color to accent
+.accent-off | change color to accent
 .base | change color to base
+
+### Colors Explained
+Primary | it should be the color you want people to remember you by
+Secondary | complementing colors the primary
+Accent | Complete opposite to the primary colors
+Base | The main website background color
+Grey | Use as logically possible
+Body | Main text color
+Body Off | Use it for lesser importance
 
 
 ## Auto Spacing Vertical Elements
