@@ -36,7 +36,7 @@ body {
     font-size: var(--clamp-body);
     color: var(--body-color);
     line-height: var(--lh-body);
-    /* background-color: var(--base); */
+    background-color: var(--base);
 
 }
 .text-xxxl {
@@ -169,17 +169,17 @@ h3 {line-height: var(--lh-heading); letter-spacing: var(--ls-heading);}
 }
 .ct-text-block {padding: 0.5rem 0}
 .primary {color: var(--primary)}
-.primary {color: var(--primary-off)}
+.primary-off {color: var(--primary-off)}
 .secondary {color: var(--secondary)}
-.secondary {color: var(--secondary-off)}
+.secondary-off {color: var(--secondary-off)}
 .accent {color: var(--accent)}
-.accent {color: var(--accent-off)}
+.accent-off {color: var(--accent-off)}
 .base {color: var(--base)}
 .white, .light {color: var(--white);}
 .grey, .light {color: var(--grey);}
-.grey-dark{color: var(--grey-dark);}
-.grey-mid{color: var(--grey-mid);}
-.grey-light{color: var(--grey-light);}
+.grey-dark {color: var(--grey-dark);}
+.grey-mid {color: var(--grey-mid);}
+.grey-light {color: var(--grey-light);}
 .black, .dark {color: var(--black);}
 .body-color {color: var(--body-color);}
 .body-off {color: var(--body-off);}
@@ -691,13 +691,13 @@ section{
 	border-radius: var(--btn-radius);
 }
 .btn-primary::before {
-	background-color: var(--accent);
+	background-color: var(--primary-off);
 }
 .btn-secondary::before {
-	background-color: var(--primary);
+	background-color: var(--secondary-off);
 }
 .btn-accent::before {
-	background-color: var(--black);
+	background-color: var(--accent-off);
 }
 .btn-white::before {
 	background-color: var(--white);
