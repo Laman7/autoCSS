@@ -107,9 +107,9 @@ CSS | what it does
 .grey-dark | change color to grey-dark
 .grey-mid | change color to grey-mid
 .grey-light | change color to grey-light
-.grey-mid | change color to grey-mid
-.grey-mid | change color to grey-mid
-.grey-mid | change color to grey-mid
+.black | change color to black
+.body-color | change color to body-color. 
+.body-offset | change color to body-offset
 
 ### Colors Explained
 Primary | it should be the color you want people to remember you by
