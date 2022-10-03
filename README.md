@@ -102,6 +102,14 @@ CSS | what it does
 .accent | change color to accent
 .accent-off | change color to accent
 .base | change color to base
+.white | change color to white
+.grey | change color to grey
+.grey-dark | change color to grey-dark
+.grey-mid | change color to grey-mid
+.grey-light | change color to grey-light
+.grey-mid | change color to grey-mid
+.grey-mid | change color to grey-mid
+.grey-mid | change color to grey-mid
 
 ### Colors Explained
 Primary | it should be the color you want people to remember you by
