@@ -284,23 +284,23 @@ section{
 }
 .grid-2:not(.ct-section) {
     display: grid !important;
-    grid-template-columns: repeat(auto-fill, minmax(min(20rem), 1fr)); 
+    grid-template-columns: repeat(auto-fit, minmax(min(20rem), 1fr)); 
     width: 100%;
 }
 
 .grid-3:not(.ct-section) {
     display: grid !important;
-    grid-template-columns: repeat(auto-fill, minmax(min(20rem), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(20rem), 1fr));
     width: 100%;
 }
 .grid-4:not(.ct-section) {
     display: grid !important;
-    grid-template-columns: repeat(auto-fill, minmax(min(13rem), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(13rem), 1fr));
     width: 100%;
 }
 .grid-5:not(.ct-section) {
     display: grid !important;
-    grid-template-columns: repeat(auto-fill, minmax(min(12.5rem), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(12.5rem), 1fr));
     width: 100%;
 }
 
@@ -338,31 +338,28 @@ section{
 @media (max-width: 991px) {
     .grid-1-2:not(.ct-section) {
         display: grid !important;
-        grid-template-columns: repeat(auto-fill, minmax(min(18.5rem), 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(min(18.5rem), 1fr));
     }
     .grid-1-3:not(.ct-section) {
         display: grid !important;
-        grid-template-columns: repeat(auto-fill, minmax(min(18.5rem), 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(min(18.5rem), 1fr));
     }
     .grid-3-2:not(.ct-section) {
         display: grid !important;
-        grid-template-columns: repeat(auto-fill, minmax(min(18.5rem), 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(min(18.5rem), 1fr));
     }
     .grid-2-3:not(.ct-section) {
         display: grid !important;
-        grid-template-columns: repeat(auto-fill, minmax(min(18.5rem), 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(min(18.5rem), 1fr));
     }
     .grid-2-1:not(.ct-section) {
         display: grid !important;
-        grid-template-columns: repeat(auto-fill, minmax(min(18.5rem), 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(min(18.5rem), 1fr));
     }
     .grid-3-1:not(.ct-section) {
         display: grid !important;
-        grid-template-columns: repeat(auto-fill, minmax(min(18.5rem), 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(min(18.5rem), 1fr));
     }
-}
-.grid-stretch{
-    align-items: stretch;
 }
 
 /* Gaps for Grid */
@@ -676,7 +673,7 @@ section{
 .btn-primary,.btn-secondary,.btn-accent,.btn-white {
 	z-index:1;
 	border: none;
-    padding: 1em 1.5em;
+    padding: calc(var(--clamp-body))  calc(var(--clamp-body)*2);
 	transition: all 0.5s;
 	border:none;
 	overflow: hidden;
@@ -791,27 +788,29 @@ section{
 .btn-xs {
     font-size: var(--xs);
     font-size: var(--clamp-xs);
-    padding: .5em 1em;
-    cursor: pointer;
+    padding: calc(var(--clamp-xs))  calc(var(--clamp-xs)*2);
 }
 .btn-s {
     font-size: var(--s);
     font-size: var(--clamp-s);
-    padding: .75em 1.5em;
-    cursor: pointer;
+    padding: calc(var(--clamp-s))  calc(var(--clamp-s)*2);
 }
 .btn-m {
     font-size: var(--m);
     font-size: var(--clamp-m);
-    padding: .75em 1.5em;
-    cursor: pointer;
+    padding: calc(var(--clamp-m))  calc(var(--clamp-m)*2);
 }
 .btn-l {
     font-size: var(--l);
     font-size: var(--clamp-l);
-    padding: .75em 1.5em;
-    cursor: pointer;
+    padding: calc(var(--clamp-l))  calc(var(--clamp-l)*2);
 }
+.btn-long{padding: calc(var(--clamp-body))  calc(var(--clamp-body)*4);}
+.btn-xs.btn-long { padding: calc(var(--clamp-xs))  calc(var(--clamp-xs)*4);}
+.btn-s.btn-long { padding: calc(var(--clamp-s))  calc(var(--clamp-s)*4);}
+.btn-m.btn-long { padding: calc(var(--clamp-m))  calc(var(--clamp-m)*4);}
+.btn-l.btn-long { padding: calc(var(--clamp-l))  calc(var(--clamp-l)*4);}
+
 
 a[class*="btn--"] {
     display: inline-block;
@@ -1044,6 +1043,3 @@ label {
 .bg-img,.bg-default {position: relative;
     background-color: grey;
     background-image: repeating-linear-gradient( 45deg,#eee,#eee 10px,#ddd 10px,#ddd 20px );}
-
-.relative { position: relative;}
-.absolute {position: absolute}
