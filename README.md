@@ -58,7 +58,7 @@ h1, .text-xxl | 80px
 h2, .text-xl | 48px
 h3, .text-l | 32px
 h4, .text-m | 24px
-body |  18px
+.text-body |  18px
 h5, h6, .text-s | 16px
 .text-xs | 12px
 
@@ -86,10 +86,10 @@ CSS | what it does
 .text-uppercase | font text uppercase 
 .text-lowercase | font text lowercase 
 .text-capitalize | font text capitalize 
-.text-left | font text left 
-.text-center | font text center 
-.text-right | font text right 
-.text-justify | font text justify 
+.text-left | font text left align
+.text-center | font text center align
+.text-right | font text right align
+.text-justify | font text justify aling
 .text-none | font text decoration-none 
 
 ## Text Color
@@ -232,6 +232,7 @@ CSS | What it does
 .btn-primary | Rounded button with primary color
 .btn-secondary | Rounded button with secondary color
 .btn-accent | Rounded button with accent color
+.btn-white | Rounded button with white color
 .btn-outline | Outline rounded button with color
 .btn-xs | Button size based on font size 12px
 .btn-s | Button size based on font size 16px
