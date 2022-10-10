@@ -2,6 +2,7 @@
 
 1. Addition of 6 colors (Off colors and Shades of Grey)
 2. Font sizes to match perfect fifth (based on type-scale.com)
+3. Improved button sizing (added btn-long)
 
 # Auto CSS (v1.3)
 
@@ -238,6 +239,7 @@ CSS | What it does
 .btn-s | Button size based on font size 16px
 .btn-m | Button size based on font size 24px
 .btn-l | Button size based on font size 32px
+.btn-long | Button are longer horizontally
 
 ### Link
 CSS | What it does 

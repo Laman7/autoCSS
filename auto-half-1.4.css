@@ -700,7 +700,7 @@ section{
 	background-color: var(--accent-off);
 }
 .btn-white::before {
-	background-color: var(--white);
+	background-color: var(--body-color);
 }
 
 .btn-primary:hover::before, .btn-secondary:hover::before, .btn-accent:hover::before, .btn-white:hover::before {
@@ -709,6 +709,7 @@ section{
 .btn-primary:hover,.btn-secondary:hover ,.btn-accent:hover, .btn-white:hover  {
  padding-right: 3em
 }
+.btn-long:hover {padding-right: 4em}
 .btn-primary::after, .btn-secondary::after, .btn-accent::after, .btn-white::after {
 	content:" \2192";
 	position: absolute;
@@ -769,10 +770,12 @@ section{
 	box-shadow: 0 0 0 2px var(--accent) inset
 }
 .btn-white {
-    background-color: transparent;
+    background-color: var(--white);
+    color:var(--body-color);
     font-size: var(--body);
     font-size: var(--clamp-body);
 }
+.btn-white:hover {color:var(--white)}
 .btn-white.btn-outline {
     background-color: transparent;
     color: var(--white);
@@ -782,7 +785,7 @@ section{
 	background-color: var(-white);
 }
 .btn-white.btn-outline:hover {
-	color:var(--black);
+	/* color:var(--black); */
 	box-shadow: 0 0 0 2px var(--white) inset
 }
 .btn-xs {
@@ -811,7 +814,6 @@ section{
 .btn-m.btn-long { padding: calc(var(--clamp-m))  calc(var(--clamp-m)*4);}
 .btn-l.btn-long { padding: calc(var(--clamp-l))  calc(var(--clamp-l)*4);}
 
-
 a[class*="btn--"] {
     display: inline-block;
 }
@@ -824,15 +826,11 @@ a {
     transition: all 0.5s;
     color: var(--primary);
 }
-ax:hover {
-    filter: brightness(var(--hover-brightness));
-    text-decoration: underline;
-}
 button:hover {
     cursor: pointer;
     filter: brightness(var(--hover-brightness));
 }
-.link-primary {color: var(--primary)}
+.link-primary {color: var(--primary); border-bottom: 1px solid var(--primary) }
 .link-secondary {color: var(--secondary)}
 .link-accent {color: var(--accent)}
 .rounded-xs {
@@ -1039,6 +1037,7 @@ label {
 .margin-top-5 {margin-top:5vh}
 .margin-top-10 {margin-top:10vh}
 .margin-top-25 {margin-top:25vh}
+.margin-0 {margin:0}
 
 .bg-img,.bg-default {position: relative;
     background-color: grey;
