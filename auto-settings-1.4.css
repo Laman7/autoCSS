@@ -7,7 +7,7 @@
     --secondary-off: #33615e;
     --accent: #F13060;
     --accent-off: #b7254a;
-    --base: #D5EEFF;
+    --base: #f2f2f2;
     --white: #f2f2f2;
     --black: #111111;
     --body-color: #011428;
@@ -18,7 +18,13 @@
     --grey-light: #babdd3;
     --hover-brightness: 1.3;
     --border-radius: 0.5rem;
-    --btn-radius: 0.5rem;
+    --btn-radius: 2rem;
+	--btn-hover: "\00BB";
+	/* 
+	\2192 for arrow
+	\203A for single right chevron
+	\00BB for double right chevron
+	*/
 
     --xxxl: 7.5rem     /* changed 120px*/;
     --xxl: 5rem        /* H1 80px*/;

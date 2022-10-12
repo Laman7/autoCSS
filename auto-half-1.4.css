@@ -84,7 +84,9 @@ h5, h6, .text-s {
     font-size: var(--clamp-body);
     line-height: var(--lh-body);
 }
-h3 {line-height: var(--lh-heading); letter-spacing: var(--ls-heading);}
+.text-m, .text-s, .text-body, .text-xs {
+    line-height: var(--lh-body);
+}
 
 /* Text */
 .text-larger {font-size: 2em;}
@@ -664,13 +666,8 @@ section{
 }
 
 /* Button */
-.btn-primary, .btn-secondary, .btn-accent, .btn-white {line-height: 1em;}
-.btn-primary {
-    background-color: var(--primary);
-    font-size: var(--body);
-    font-size: var(--clamp-body);
-}
-.btn-primary,.btn-secondary,.btn-accent,.btn-white {
+.btn-primary, .btn-secondary, .btn-accent, .btn-white, .btn-black {line-height: 1em;}
+.btn-primary,.btn-secondary,.btn-accent,.btn-white, .btn-black {
 	z-index:1;
 	border: none;
     padding: calc(var(--clamp-body))  calc(var(--clamp-body)*2);
@@ -681,7 +678,7 @@ section{
 	text-decoration:none;
 	border-radius: var(--btn-radius);
 }
-.btn-primary::before,.btn-secondary::before,.btn-accent::before,.btn-white::before {
+.btn-primary::before,.btn-secondary::before,.btn-accent::before,.btn-white::before, .btn-black::before {
 	content: "";
 	position: absolute; 
 	top: 0; left: 0; width: 100%; height: 100%;
@@ -702,26 +699,36 @@ section{
 .btn-white::before {
 	background-color: var(--body-color);
 }
+.btn-white::before {
+	background-color: var(--body-color);
+}
+.btn-black::before {
+	background-color: var(--white);
+}
 
-.btn-primary:hover::before, .btn-secondary:hover::before, .btn-accent:hover::before, .btn-white:hover::before {
+.btn-primary:hover::before, .btn-secondary:hover::before, .btn-accent:hover::before, .btn-white:hover::before, .btn-black:hover::before {
   transform: translateX(0);
 }
-.btn-primary:hover,.btn-secondary:hover ,.btn-accent:hover, .btn-white:hover  {
- padding-right: 3em
+.btn-primary:hover,.btn-secondary:hover ,.btn-accent:hover, .btn-white:hover,.btn-black:hover  {
+ padding-right:  calc(var(--clamp-body)*3)
 }
 .btn-long:hover {padding-right: 4em}
-.btn-primary::after, .btn-secondary::after, .btn-accent::after, .btn-white::after {
-	content:" \2192";
+.btn-primary::after, .btn-secondary::after, .btn-accent::after, .btn-white::after, .btn-black::after {
+	content: var(--btn-hover);
 	position: absolute;
 	right:3em;
 	opacity:0;
 	transition: all .2s;
 }
-.btn-primary:hover::after,.btn-secondary:hover::after,.btn-accent:hover::after,  .btn-white:hover::after{
+.btn-primary:hover::after,.btn-secondary:hover::after,.btn-accent:hover::after,  .btn-white:hover::after, .btn-black:hover::after{
 	right:1em;
 	opacity:1;
 }
-
+.btn-primary {
+    background-color: var(--primary);
+    font-size: var(--body);
+    font-size: var(--clamp-body);
+}
 .btn-primary.btn-outline {
     background-color: transparent;
     color: var(--primary);
@@ -771,7 +778,7 @@ section{
 }
 .btn-white {
     background-color: var(--white);
-    color:var(--body-color);
+    color:var(--black);
     font-size: var(--body);
     font-size: var(--clamp-body);
 }
@@ -785,6 +792,25 @@ section{
 	background-color: var(-white);
 }
 .btn-white.btn-outline:hover {
+	/* color:var(--black); */
+	box-shadow: 0 0 0 2px var(--white) inset
+}
+.btn-black {
+    background-color: var(--black);
+    color:var(--white);
+    font-size: var(--body);
+    font-size: var(--clamp-body);
+}
+.btn-black:hover {color:var(--black)}
+.btn-black.btn-outline {
+    background-color: transparent;
+    color: var(--black);
+	box-shadow: 0 0 0 2px var(--black) inset
+}
+.btn-black.btn-outline::before {
+	background-color: var(-white);
+}
+.btn-black.btn-outline:hover {
 	/* color:var(--black); */
 	box-shadow: 0 0 0 2px var(--white) inset
 }
@@ -808,6 +834,10 @@ section{
     font-size: var(--clamp-l);
     padding: calc(var(--clamp-l))  calc(var(--clamp-l)*2);
 }
+.btn-xs:hover {padding-right: calc(var(--clamp-xs)*3);}
+.btn-s:hover {padding-right: calc(var(--clamp-s)*3);}
+.btn-m:hover {padding-right: calc(var(--clamp-m)*3);}
+.btn-l:hover {padding-right: calc(var(--clamp-l)*3);}
 .btn-long{padding: calc(var(--clamp-body))  calc(var(--clamp-body)*4);}
 .btn-xs.btn-long { padding: calc(var(--clamp-xs))  calc(var(--clamp-xs)*4);}
 .btn-s.btn-long { padding: calc(var(--clamp-s))  calc(var(--clamp-s)*4);}
@@ -830,9 +860,27 @@ button:hover {
     cursor: pointer;
     filter: brightness(var(--hover-brightness));
 }
-.link-primary {color: var(--primary); border-bottom: 1px solid var(--primary) }
+.link-primary {color: var(--primary); }
 .link-secondary {color: var(--secondary)}
 .link-accent {color: var(--accent)}
+
+.link-primary, .link-secondary, .link-accent {
+    display: inline-block; text-decoration: none; margin-bottom:1rem;
+}
+.link-primary::after, .link-secondary::after, .link-accent::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    transition: width .4s;
+}
+.link-primary::after { background: var(--primary);}
+.link-secondary::after {background: var(--secondary)}
+.link-accent::after {background: var(--accent)}
+.link-primary:hover::after, .link-secondary:hover::after, .link-accent:hover::after {
+    width:100%;
+}
+
 .rounded-xs {
     border-radius: 0.4444444444rem;
 }
