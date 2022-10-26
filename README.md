@@ -3,6 +3,9 @@
 1. Addition of 6 colors (Off colors and Shades of Grey)
 2. Font sizes to match perfect fifth (based on type-scale.com)
 3. Improved button sizing (added btn-long)
+4. Improved Grid to make it expandable right away
+5. Added .bg-{color}. Works like color, only for BG
+6. Added display None classes for lg, md, sm
 
 # Auto CSS (v1.3)
 

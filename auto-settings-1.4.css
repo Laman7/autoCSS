@@ -20,6 +20,7 @@
     --border-radius: 0.5rem;
     --btn-radius: 2rem;
 	--btn-hover: "\00BB";
+    --btn-outline-border: 2px;
 	/* 
 	\2192 for arrow
 	\203A for single right chevron
