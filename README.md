@@ -6,6 +6,7 @@
 4. Improved Grid to make it expandable right away
 5. Added .bg-{color}. Works like color, only for BG
 6. Added display None classes for lg, md, sm
+7. Added Margin class (margin-v-XX)
 
 # Auto CSS (v1.3)
 
@@ -40,6 +41,7 @@ CSS | Grid Behavior
 .grid-3 |  Creates 3 columns
 .grid-4 |  Creates 4 columns
 .grid-5 |  Creates 5 columns
+.grid-6 |  Creates 6 columns
 .grid-1-2 |  Creates 1 then 2 spacing (2 columns)
 .grid-1-3 |  Creates 1 then 3 spacing (2 columns)
 .grid-2-1 |  Creates 2 then 1 spacing (2 columns)

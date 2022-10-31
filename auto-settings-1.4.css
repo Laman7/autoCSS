@@ -35,10 +35,12 @@
     --body: 1.125rem   /* 18px*/;
     --s: 1rem          /* 16px*/;
     --xs:0.667rem      /* changed 10px*/;
+	--lh-xxxl: 1.2em;
     --lh-h1: 1.1em;
 	--lh-h2: 1.3em;
 	--lh-heading: 1.3em;
     --lh-body: 1.5em;
+    --lh-btn: 1em;
 	--ls-heading:-0.025em;
 	--ls-h1:-0.025em;
     --ls-h2:-0.025em;
@@ -57,4 +59,10 @@
     --width-card-m: 40rem;
     --width-card-l: 54rem;
     --width-content: 1080px;
+
+    /*BreakEvent Point*/
+    --desktop: 1312px; /* Desktop */
+    --tablet: 992px; /* Tablet */
+    --landscape: 768px; /* Landscape */
+    --mobile: 480px; /* Mobile */
 }
