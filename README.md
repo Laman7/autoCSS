@@ -1,4 +1,8 @@
-# AutoCSS (v1.4)
+# AutoCSS (v1.5) 1 Nov
+
+1. Added Link white and grey
+
+# AutoCSS (v1.4) 29 Oct
 
 1. Addition of 6 colors (Off colors and Shades of Grey)
 2. Font sizes to match perfect fifth (based on type-scale.com)

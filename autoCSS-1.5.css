@@ -1,4 +1,4 @@
-/* 29 Oct Developed by Laman7 https://github.com/edwin-laman7/autoCSS */
+/* AutoCSS 1.5 1 Nov Developed by Laman7 https://github.com/edwin-laman7/autoCSS */
 /* Be sure AutoCSS variables above the line or loads before this */
 *,::after,::before{box-sizing:border-box}
 body{min-height:100vh; text-rendering:optimizeSpeed}
@@ -336,10 +336,10 @@ section{
     .grid-5:not(.ct-section),.grid-6:not(.ct-section) { grid-template-columns: repeat(3,1fr);}
 }
 @media (max-width:480px) {
-    .grid-2:not(.ct-section) { grid-template-columns: repeat(1,1fr);}
+    .grid-2:not(.ct-section),.grid-3:not(.ct-section) { grid-template-columns: repeat(1,1fr);}
 }
 @media (max-width: 340px) {
-    .grid-3:not(.ct-section),.grid-4:not(.ct-section) {grid-template-columns: repeat(1,1fr)}
+    .grid-4:not(.ct-section) {grid-template-columns: repeat(1,1fr)}
     .grid-5:not(.ct-section),.grid-6:not(.ct-section) { grid-template-columns: repeat(2,1fr);}
 }
 .grid-1-2:not(.ct-section) {
@@ -698,7 +698,7 @@ section{
 }
 /* Button */
 .btn-primary,.btn-secondary,.btn-accent,.btn-white, .btn-black {
-	z-index:1;
+	z-index:1; display:block;
 	border: none;
     padding: calc(var(--clamp-body))  calc(var(--clamp-body)*2);
 	transition: all 0.5s;
