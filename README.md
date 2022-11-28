@@ -122,6 +122,8 @@ CSS | what it does
 .body-offset | change color to body-offset
 
 ### Colors Explained
+Color Code Name | Description 
+--- | --- 
 Primary | it should be the color you want people to remember you by
 Secondary | complementing colors the primary
 Accent | Complete opposite to the primary colors
