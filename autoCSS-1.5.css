@@ -1,4 +1,4 @@
-/* AutoCSS 1.5 1 Nov Developed by Laman7 https://github.com/edwin-laman7/autoCSS */
+/* AutoCSS 1.5 9 Dec 22 Developed by Laman7 https://github.com/edwin-laman7/autoCSS */
 /* Be sure AutoCSS variables above the line or loads before this */
 *,::after,::before{box-sizing:border-box}
 body{min-height:100vh; text-rendering:optimizeSpeed}
@@ -899,11 +899,11 @@ button:hover {
     .btn-l.btn-long { padding: calc(var(--clamp-l))  calc(var(--clamp-l)*2);}
 }
 
-a.link-primary {color: var(--primary); }
-a.link-secondary {color: var(--secondary)}
-a.link-accent {color: var(--accent)}
-a.link-white {color: var(--white)}
-a.link-grey {color: var(--grey)}
+a.link-primary, .link-primary a {color: var(--primary); }
+a.link-secondary, .link-secondary a {color: var(--secondary)}
+a.link-accent, .link-accent a {color: var(--accent)}
+a.link-white, .link-white a {color: var(--white)}
+a.link-grey, .link-grey a {color: var(--grey)}
 
 a.link-primary, a.link-secondary, a.link-accent, a.link-white, a.link-grey {
     display: inline-block; text-decoration: none;
