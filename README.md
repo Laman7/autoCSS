@@ -1,3 +1,8 @@
+# AutoCSS (v1.7) 12 Jan
+1. Added col-1, col-2 .. col-12 for specific column size.
+2. Adjusted the button sizing to make sense. 1.5 is too big.
+3. Added a.link-body for body color link
+
 # AutoCSS (v1.5) 1 Nov
 
 1. Added Link white and grey
@@ -144,7 +149,7 @@ CSS | What it does
 .space-v-xl | adds margin top child 48px
 
 ## Auto Spacing Horizontal Elements
-Apply at Div. Don't apply to section. All elements in Div (child) is subjected to space. Similar name: Owl system
+Use if for inline elemental level (tiny details). Apply at Div. Don't apply to section and grids. All elements in Div (child) is subjected to space. Similar name: Owl system
 
 CSS | What it does 
 --- | --- 

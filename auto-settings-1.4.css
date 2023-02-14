@@ -44,6 +44,7 @@
 	--ls-heading:-0.025em;
 	--ls-h1:-0.025em;
     --ls-h2:-0.025em;
+    --col:7rem;
 	
     --clamp-xxxl: clamp(3rem, calc(3rem + ((1vw - 0.3rem) * 7.6923)), var(--xxxl));
     --clamp-xxl: clamp(2.5rem, calc(2.5rem + ((1vw - 0.3rem) * 4.8077)), var(--xxl));

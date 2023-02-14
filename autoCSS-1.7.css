@@ -1,4 +1,4 @@
-/* AutoCSS 1.6 16 Jan 23 Developed by Laman7 https://github.com/edwin-laman7/autoCSS */
+/* AutoCSS 1.7 10 Feb 23 Developed by Laman7 https://github.com/edwin-laman7/autoCSS */
 /* Be sure AutoCSS variables above the line or loads before this */
 *,::after,::before{box-sizing:border-box}
 body{min-height:100vh; text-rendering:optimizeSpeed}
@@ -271,6 +271,21 @@ section{
     width: 100%;
     max-width: 100%;
 }
+.col-1 {width: calc(var(--col)*1 - 2rem)}
+.col-2 {width: calc(var(--col)*2 - 2rem)}
+.col-3 {width: calc(var(--col)*3 - 2rem)}
+.col-4 {width: calc(var(--col)*4 - 2rem)}
+.col-5 {width: calc(var(--col)*5 - 2rem)}
+.col-6 {width: calc(var(--col)*6 - 2rem)}
+.col-7 {width: calc(var(--col)*7 - 2rem)}
+.col-8 {width: calc(var(--col)*8 - 2rem)}
+.col-9 {width: calc(var(--col)*9 - 2rem)}
+.col-10 {width: calc(var(--col)*10 - 2rem)}
+.col-11 {width: calc(var(--col)*11 - 2rem)}
+.col-12 {width: calc(var(--col)*12 - 2rem)}
+.align-right {margin-left: auto;}
+.align-center {margin: auto;}
+
 @media (max-width: 1312px) {
     .width-full, .container {max-width: 1200px;}
     .width-l-full {width: 100%;}
@@ -310,7 +325,6 @@ section{
     gap: var(--m);
     gap: var(--clamp-m);
     align-items: stretch;
-    width: 100%;
 }
 .grid-2:not(.ct-section) {
 	grid-template-columns: repeat(2,1fr);
@@ -327,7 +341,13 @@ section{
 .grid-6:not(.ct-section) {
     grid-template-columns: repeat(6,1fr);
 }
+@media (max-width: 1312px) {
+    .col-9, .col-10, .col-11, .col-12 {width: auto;}
+}
+
 @media (max-width: 992px) {
+        .col-9, .col-10, .col-11, .col-12 {width: auto;}
+        .col-5, .col-6, .col-7, .col-8 {width: 75%;}
         .grid-3:not(.ct-section),.grid-4:not(.ct-section) {grid-template-columns: repeat(3,1fr)}
         .grid-5:not(.ct-section),.grid-6:not(.ct-section) { grid-template-columns: repeat(4,1fr);}
     }
@@ -882,7 +902,6 @@ a[class*="btn--"] {
     background: none;
     border: none;
 }
-
 a {
     transition: all 0.5s;
     color: var(--primary);
@@ -898,17 +917,20 @@ button:hover {
     .btn-m.btn-long { padding: calc(var(--clamp-m))  calc(var(--clamp-m)*2);}
     .btn-l.btn-long { padding: calc(var(--clamp-l))  calc(var(--clamp-l)*2);}
 }
+a.btn-text-dark {color: var(--black)}
+a.btn-text-light {color:var(--white)}
 
 a.link-primary, .link-primary a {color: var(--primary); }
 a.link-secondary, .link-secondary a {color: var(--secondary)}
 a.link-accent, .link-accent a {color: var(--accent)}
 a.link-white, .link-white a {color: var(--white)}
 a.link-grey, .link-grey a {color: var(--grey)}
+a.link-body, .link-body a {color: var(--body-color)}
 
-a.link-primary, a.link-secondary, a.link-accent, a.link-white, a.link-grey {
+a.link-primary, a.link-secondary, a.link-accent, a.link-white, a.link-grey, a.link-body {
     display: inline-block; text-decoration: none;
 }
-a.link-primary::after, a.link-secondary::after, a.link-accent::after, a.link-white::after, a.link-grey::after {
+a.link-primary::after, a.link-secondary::after, a.link-accent::after, a.link-white::after, a.link-grey::after, a.link-body::after {
     content: '';
     display: block;
     width: 0;
@@ -918,9 +940,10 @@ a.link-primary::after, a.link-secondary::after, a.link-accent::after, a.link-whi
 a.link-primary::after { background: var(--primary);}
 a.link-secondary::after {background: var(--secondary)}
 a.link-accent::after {background: var(--accent)}
-a.link-white::after {background: var(--primary)}
-a.link-grey::after {background: var(--primary)}
-a.link-primary:hover::after, a.link-secondary:hover::after, a.link-accent:hover::after, a.link-white:hover::after, a.link-grey:hover::after {
+a.link-white::after {background: var(--white)}
+a.link-grey::after {background: var(--grey)}
+a.link-body::after {background: var(--body-color)}
+a.link-primary:hover::after, a.link-secondary:hover::after, a.link-accent:hover::after, a.link-white:hover::after, a.link-grey:hover::after, a.link-body:hover::after {
     width:100%;
 }
 
