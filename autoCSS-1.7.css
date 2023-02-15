@@ -982,7 +982,7 @@ a.link-primary:hover::after, a.link-secondary:hover::after, a.link-accent:hover:
 
 /* Tables */
 table {
-    border: 1px solid var(--grey);
+    border: 1px solid var(--grey-light);
     border-radius: var(--border-radius);
     border-spacing: 0;
     display: inline-block;
@@ -1014,7 +1014,7 @@ table thead th:last-child {
     border-top-right-radius: var(--border-radius);
 }
 table tr:nth-child(even) {
-    background-color: var(--grey);
+    background-color: var(--grey-light);
 }
 
 /* Quotes */

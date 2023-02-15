@@ -2,8 +2,8 @@
 1. ~~Added col-1, col-2 .. col-12 for specific column size.~~ KIV
 2. Adjusted the button sizing to make sense. 1.5 is too big.
 3. Added a.link-body for body color link (Done)
-4. Change in Padding, Margin & Space Sizes (Done)
-5. Add Grid for Table and Mobile (Do)
+4. Change in Padding, Margin & Space Sizes (refer to respective guide)
+5. Add Grid for Table and Mobile (refer to Grid)
 
 # AutoCSS (v1.6) 2 Jan
 1. Grid fix
