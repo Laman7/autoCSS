@@ -1,7 +1,12 @@
-# AutoCSS (v1.7) 12 Jan
-1. Added col-1, col-2 .. col-12 for specific column size.
+# AutoCSS (v1.7) 12 Jan (Beta)
+1. ~~Added col-1, col-2 .. col-12 for specific column size.~~ KIV
 2. Adjusted the button sizing to make sense. 1.5 is too big.
-3. Added a.link-body for body color link
+3. Added a.link-body for body color link (Done)
+4. Change in Padding, Margin & Space Sizes (Done)
+5. Add Grid for Table and Mobile (Do)
+
+# AutoCSS (v1.6) 2 Jan
+1. Grid fix
 
 # AutoCSS (v1.5) 1 Nov
 
@@ -26,10 +31,10 @@ Systematic approach to web development instead of manually adding padding, margi
 - Designed to fit 1400px screen 
 - Full 12 grid size 1312px with 80px Column and 32px Gutter; Total is 112px per Column.
 - Break even point
-- Desktop: 1312px (-xl)
-- Tablet: 992px (-lg)
-- Landscape: 768px (-md)
-- Portrait/Mobile: 480px (-sm)
+- Desktop: 1312px (-xl) e.g. pad-xl-s
+- Tablet: 992px (-lg) e.g. pad-lg-s
+- Landscape: 768px (-md) e.g. pad-md-s
+- Portrait/ Mobile: 480px (-sm) e.g. pad-sm-s
 
 ## Steps
 1. Get color code from Mycolorspace (https://mycolor.space/)
@@ -44,22 +49,43 @@ Systematic approach to web development instead of manually adding padding, margi
 ## Grid
 New grid system adds easier to code from design.
 
-CSS | Grid Behavior
---- | --- 
-.grid-2 |  Creates 2 columns
-.grid-3 |  Creates 3 columns
-.grid-4 |  Creates 4 columns
-.grid-5 |  Creates 5 columns
-.grid-6 |  Creates 6 columns
-.grid-1-2 |  Creates 1 then 2 spacing (2 columns)
-.grid-1-3 |  Creates 1 then 3 spacing (2 columns)
-.grid-2-1 |  Creates 2 then 1 spacing (2 columns)
-.grid-2-3 |  Creates 2 then 3 spacing (2 columns)
-.grid-3-1 |  Creates 3 then 1 spacing (2 columns)
-.grid-3-2 |  Creates 3 then 2 spacing (2 columns)
-.grid-xl-reverse ,.grid-lg-reverse |  Reverse the order in 992px size. Apply to child grid.
-.grid-l-reverse ,.grid-md-reverse |  Reverse the order in 768px size. Apply to child grid.
-.grid-m-reverse ,.grid-sm-reverse |  Reverse the order in 480px size. Apply to child grid.
+CSS | Grid Behavior | Application
+--- | --- | ---
+.grid-2 |  Creates 2 columns | Apply to parent div or container
+.grid-3 |  Creates 3 columns | Apply to parent div or container
+.grid-4 |  Creates 4 columns | Apply to parent div or container
+.grid-5 |  Creates 5 columns | Apply to parent div or container
+.grid-6 |  Creates 6 columns | Apply to parent div or container
+.grid-1-2 |  Creates 1 then 2 spacing (2 columns)  | Apply to parent div or container
+.grid-1-3 |  Creates 1 then 3 spacing (2 columns) | Apply to parent div or container
+.grid-2-1 |  Creates 2 then 1 spacing (2 columns) | Apply to parent div or container
+.grid-2-3 |  Creates 2 then 3 spacing (2 columns) | Apply to parent div or container
+.grid-3-1 |  Creates 3 then 1 spacing (2 columns) | Apply to parent div or container
+.grid-3-2 |  Creates 3 then 2 spacing (2 columns) | Apply to parent div or container
+.grid-xl-reverse ,.grid-lg-reverse |  Reverse the order in 992px size. Apply to child grid.  | Apply to parent div or container
+.grid-l-reverse ,.grid-md-reverse |  Reverse the order in 768px size. Apply to child grid.  | Apply to parent div or container
+.grid-m-reverse ,.grid-sm-reverse |  Reverse the order in 480px size. Apply to child grid.  | Apply to parent div or container
+
+Grid Responsive Overide
+CSS | Grid Behavior | Application
+--- | --- | ---
+.grid-md-1 | Overide to 1 space in tablet | Apply to parent div or container
+.grid-md-2 | Overide to 2 space in tablet | Apply to parent div or container
+.grid-md-3 | Overide to 3 space in tablet | Apply to parent div or container
+.grid-md-4 | Overide to 4 space in tablet | Apply to parent div or container
+.grid-sm-1 | Overide to 1 space in mobile | Apply to parent div or container
+.grid-sm-2 | Overide to 2 space in mobile | Apply to parent div or container
+.grid-sm-3 | Overide to 3 space in mobile | Apply to parent div or container
+.grid-sm-4 | Overide to 4 space in mobile | Apply to parent div or container
+
+Applying Gap in Grid
+CSS | Grid Behavior | Application
+--- | --- | ---
+.gap-xs | Creates gap of 16px | Apply to same div as .grid class is applied
+.gap-s | Creates gap of 24px | Apply to same div as .grid class is applied
+.gap-m | Creates gap of 32px | Apply to same div as .grid class is applied
+.gap-l | Creates gap of 48px | Apply to same div as .grid class is applied
+.gap-xl | Creates gap of 64px | Apply to same div as .grid class is applied
 
 # Font Size
 
@@ -134,7 +160,7 @@ Secondary | complementing colors the primary
 Accent | Complete opposite to the primary colors
 Base | The main website background color
 Grey | Use as logically possible
-Body | Main text color
+Body color | Main text color
 Body Off | Use it for lesser importance
 
 
@@ -144,19 +170,21 @@ Apply at Div. Don't apply it to section. All elements in Div (child) is subjecte
 CSS | What it does 
 --- | --- 
 .space-v-s | adds margin top child 16px
-.space-v-m | adds margin top child 24px
-.space-v-l | adds margin top child 32px
-.space-v-xl | adds margin top child 48px
+.space-v-s | adds margin top child ~~16px~~ 24px
+.space-v-m | adds margin top child ~~24px~~ 32px
+.space-v-l | adds margin top child ~~32px~~ 48px
+.space-v-xl | adds margin top child ~~48px~~ 64px
 
 ## Auto Spacing Horizontal Elements
 Use if for inline elemental level (tiny details). Apply at Div. Don't apply to section and grids. All elements in Div (child) is subjected to space. Similar name: Owl system
 
 CSS | What it does 
 --- | --- 
-.space-h-s | adds margin left child 16px
-.space-h-m | adds margin left child 24px
-.space-h-l | adds margin left child 32px
-.space-h-xl | adds margin left child 48px
+.space-h-xs | adds margin left child 16 px
+.space-h-s | adds margin left child ~~16 px~~ 24px
+.space-h-m | adds margin left child ~~24px~~ 32px
+.space-h-l | adds margin left child ~~32px~~ 48px
+.space-h-xl | adds margin left child ~~48px~~ 64px
 
 ## Width and Card
 This can be applied to Divs. Based on 12 grid, 112px per column minus 32px
@@ -176,30 +204,32 @@ CSS | What it does
 This add padding all around div.
 CSS | What it does 
 --- | --- 
-.pad-xs | adds padding all 12px 
-.pad-s | adds padding all 16px 
-.pad-m | adds padding all 24px 
-.pad-l | adds padding all 32px 
-.pad-xl | adds padding all 48px 
+.pad-xs | adds padding all ~~12px~~ 16px 
+.pad-s | adds padding all ~~16px~~ 24px 
+.pad-m | adds padding all ~~24px~~ 32px 
+.pad-l | adds padding all ~~32px~~ 48px 
+.pad-xl | adds padding all ~~48px~~ 64px 
+.pad-xxl | adds padding all ~~48px~~ 96px 
+.pad-xxxl | adds padding all ~~48px~~ 120px 
 
 ### Padding Vertical 
 This add padding top and bottom. (with default left-right 16px)
 
 CSS | What it does 
 --- | --- 
-.pad-v-xs | adds padding vertically, top and bottom 12px 
-.pad-v-s | adds padding vertically, top and bottom 16px 
-.pad-v-m | adds padding vertically, top and bottom 24px 
-.pad-v-l,.pad-v | adds padding vertically, top and bottom 32px 
-.pad-v-xl | adds padding vertically, top and bottom 48px 
+.pad-v-xs | adds padding vertically, top and bottom ~~12px~~ 16px 
+.pad-v-s | adds padding vertically, top and bottom ~~16px~~ 24px 
+.pad-v-m | adds padding vertically, top and bottom ~~24px~~ 32px 
+.pad-v-l,.pad-v | adds padding vertically, top and bottom ~~32px~~ 48px 
+.pad-v-xl | adds padding vertically, top and bottom ~~48px~~ 64px 
 
 CSS | What it does 
 --- | --- 
-.pad-h-xs | adds padding horizontally, left and right 12px 
-.pad-h-s, .pad-h | adds padding horizontally, left and right 16px 
-.pad-h-m | adds padding horizontally, left and right 24px 
-.pad-h-l | adds padding horizontally, left and right 32px 
-.pad-h-xl | adds padding horizontally, left and right 48px
+.pad-h-xs | adds padding horizontally, left and right ~~12px~~ 16px 
+.pad-h-s, .pad-h | adds padding horizontally, left and right ~~16px~~ 24px 
+.pad-h-m | adds padding horizontally, left and right ~~24px~~ 32px 
+.pad-h-l | adds padding horizontally, left and right ~~32px~~ 48px 
+.pad-h-xl | adds padding horizontally, left and right ~~48px~~ 64px
 
 You can use variable xs, s, m, l, xl, xxl, xxxl or clamp for example
 ```
@@ -212,26 +242,27 @@ Remove the padding at certain breakpoint
 
 CSS | What it does 
 --- | --- 
-.pad-l-0, .pad-xl-0, .pad-xl-none | Removes padding at 1312px
-.pad-m-0, .pad-lg-0, .pad-lg-none | Removes padding at 992px
+.pad-lg-0, .pad-xl-0, .pad-xl-none | Removes padding at 1312px
+.pad-md-0, .pad-lg-0, .pad-lg-none | Removes padding at 992px
 .pad-md-none, .pad-l-none, .pad-md-0  | Removes padding at 768px
 .pad-sm-none, .pad-m-none, .pad-sm-0 | Removes padding at 480px
 
 ## Section Padding
-CSS | What it does 
---- | --- 
-.section-pad-s | adds padding 48px top and bottom
-.section-pad-m | adds padding 96px top and bottom
-.section-pad-l | adds padding 96px top and bottom
-.section-pad-xl | adds padding 192px top and bottom
+CSS | What it does | Application
+--- | --- |---
+.section-pad-s | adds padding 48px top and bottom | Apply to section only
+.section-pad-m | adds padding 96px top and bottom | Apply to section only
+.section-pad-l | adds padding ~~96px~~ 144px top and bottom | Apply to section only
+.section-pad-xl | adds padding 192px top and bottom | Apply to section only
 
 ## Centering
-CSS | What it does 
---- | --- 
-.center-all | centers everything in container, vertical and horizontal
-.center-h | centers element to horizontal
-.center-v | centers element to vertical
-.center-self | applies margin auto
+CSS | What it does | Application
+--- | --- | ---
+.center-all | centers everything in container, vertical and horizontal | Apply to div
+.center-h | centers element to horizontal | Apply to div
+.center-v | centers element to vertical | Apply to div
+.center-self, .align-center | applies margin auto | Apply to div
+.align-right | aligns div to right | Apply to div
 
 ## 6. Sticky
 
