@@ -220,11 +220,11 @@ h5, h6, .text-s {
 }
 .space-h-xs:not(.ct-section) > * + * {
     margin-left: var(--s);
-    margin-left: var(--clamp-xs);
+    margin-left: var(--clamp-s);
 }
 .space-h-s:not(.ct-section) > * + * {
     margin-left: var(--m);
-    margin-left: var(--clamp-s);
+    margin-left: var(--clamp-m);
 }
 .space-h-m:not(.ct-section) > * + * {
     margin-left: calc(var(--s) * 2);
