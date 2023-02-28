@@ -4,6 +4,7 @@
 3. Added a.link-body for body color link (Done)
 4. Change in Padding, Margin & Space Sizes (refer to respective guide)
 5. Add Grid for Table and Mobile (refer to Grid)
+6. Add color to overide a behaviour
 
 # AutoCSS (v1.6) 2 Jan
 1. Grid fix
