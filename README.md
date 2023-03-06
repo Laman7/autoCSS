@@ -1,3 +1,6 @@
+# AutoCSS (v1.8)
+1. Add margin-b-xx for bottom margin
+
 # AutoCSS (v1.7) 12 Jan (Beta)
 1. ~~Added col-1, col-2 .. col-12 for specific column size.~~ KIV
 2. Adjusted the button sizing to make sense. 1.5 is too big.

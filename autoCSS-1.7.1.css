@@ -1,4 +1,4 @@
-/* AutoCSS 1.7.1 28 Feb 23 Developed by Laman7 https://github.com/edwin-laman7/autoCSS */
+/* AutoCSS 1.8 3 Mar 23 Developed by Laman7 https://github.com/edwin-laman7/autoCSS */
 /* Be sure AutoCSS variables above the line or loads before this */
 *,::after,::before{box-sizing:border-box}
 body{min-height:100vh; text-rendering:optimizeSpeed}
@@ -285,7 +285,7 @@ section{
 }
 @media (max-width: 992px) {
     .width-full, .container {max-width: 992px}
-    .width-xxl, .width-xl, .width-l, .width-m, .width-xs, .width-xs, .width-50, .width-25, .width-6, .width-7, .width-8, .width-9, .width-10, .width-100 {width: 100%;}
+    .width-xxl, .width-xl, .width-l, .width-m, .width-xs, .width-xs, .width-50, .width-25, .width-5, .width-6, .width-7, .width-8, .width-9, .width-10, .width-100 {width: 100%;}
     .width-2, .width-3, .width-4 {width: 50%;}
     .width-lg-1 {width: calc(1*25%);}
     .width-lg-2, .width-lg-xs {width: calc(2*25%);}
@@ -593,7 +593,12 @@ section{
     padding-top: var(--clamp-xxxl);
     padding-bottom: var(--clamp-xxxl);
 }
-
+.margin-b-xs {margin-bottom: var(--s)}
+.margin-b-s {margin-bottom:  var(--m)}
+.margin-b-m {margin-bottom: calc(var(--s) * 3)}
+.margin-b-l {margin-bottom: calc(var(--s) * 4)}
+.margin-b-xl {margin-bottom: calc(var(--s) * 6)}
+.margin-b-xxl {margin-bottom: calc(var(--s) * 8)}
 .pad-h-xs:not(.ct-section) {
     padding-left: var(--s) ;
     padding-right: var(--s) ;
@@ -771,13 +776,13 @@ section{
   transform: translateX(0);
 }
 .btn-primary:hover,.btn-secondary:hover ,.btn-accent:hover, .btn-white:hover,.btn-black:hover  {
- padding-right:  calc(var(--clamp-body)*3)
+ /* padding-right:  calc(var(--btn-on)*3) */
 }
 .btn-long:hover {padding-right: 4em}
 .btn-primary::after, .btn-secondary::after, .btn-accent::after, .btn-white::after, .btn-black::after {
 	content: var(--btn-hover);
 	position: absolute;
-	right:3em;
+	right: var(--btn-on);
 	opacity:0;
 	transition: all .2s;
 }
@@ -787,8 +792,8 @@ section{
 }
 .btn-primary {
     background-color: var(--primary);
-    font-size: var(--body);
-    font-size: var(--clamp-body);
+    /* font-size: var(--body);
+    font-size: var(--clamp-body); */
 }
 .btn-primary.btn-outline {
     background-color: transparent;
@@ -805,8 +810,8 @@ section{
 
 .btn-secondary {
     background-color: var(--secondary);
-    font-size: var(--body);
-    font-size: var(--clamp-body);
+    /* font-size: var(--body);
+    font-size: var(--clamp-body); */
 }
 .btn-secondary.btn-outline {
     background-color: transparent;
@@ -822,8 +827,8 @@ section{
 }
 .btn-accent {
     background-color: var(--accent);
-    font-size: var(--body);
-    font-size: var(--clamp-body);
+    /* font-size: var(--body);
+    font-size: var(--clamp-body); */
 }
 .btn-accent.btn-outline {
     background-color: transparent;
@@ -886,19 +891,19 @@ section{
     padding: calc(var(--clamp-s)*.75)  calc(var(--clamp-s)*1.5);
 }
 .btn-m {
-    font-size: var(--m);
-    font-size: var(--clamp-m);
-    padding: calc(var(--clamp-m)*.75)  calc(var(--clamp-m)*1.5);
+    /* font-size: var(--m);
+    font-size: var(--clamp-m); */
+    padding: calc(var(--clamp-body)*1.25)  calc(var(--clamp-body)*2.5);
 }
 .btn-l {
-    font-size: var(--l);
-    font-size: var(--clamp-l);
-    padding: calc(var(--clamp-l)*.75)  calc(var(--clamp-l)*1.5);
+    /* font-size: var(--l);
+    font-size: var(--clamp-l); */
+    padding: calc(var(--clamp-body)*1.5)  calc(var(--clamp-body)*3);
 }
-.btn-xs:hover {padding-right: calc(var(--clamp-xs)*3);}
+/* .btn-xs:hover {padding-right: calc(var(--clamp-xs)*3);}
 .btn-s:hover {padding-right: calc(var(--clamp-s)*3);}
 .btn-m:hover {padding-right: calc(var(--clamp-m)*3);}
-.btn-l:hover {padding-right: calc(var(--clamp-l)*3);}
+.btn-l:hover {padding-right: calc(var(--clamp-l)*3);} */
 .btn-long{padding: calc(var(--clamp-body))  calc(var(--clamp-body)*4);}
 .btn-xs.btn-long { padding: calc(var(--clamp-xs))  calc(var(--clamp-xs)*4);}
 .btn-s.btn-long { padding: calc(var(--clamp-s))  calc(var(--clamp-s)*4);}
@@ -940,20 +945,21 @@ a.link-body, .link-body a {color: var(--body-color)}
 a.link-primary, a.link-secondary, a.link-accent, a.link-white, a.link-grey, a.link-body {
     display: inline-block; text-decoration: none;
 }
-a.link-primary::after, a.link-secondary::after, a.link-accent::after, a.link-white::after, a.link-grey::after, a.link-body::after {
+a.link-primary::after, a.link-secondary::after, a.link-accent::after, a.link-white::after, a.link-grey::after, a.link-body::after, .link-primary a::after, .link-secondary a::after, .link-accent a::after, .link-white a::after, .link-grey a::after, .link-body a::after {
     content: '';
     display: block;
     width: 0;
     height: 2px;
     transition: width .4s;
+    margin-top:6px
 }
-a.link-primary::after { background: var(--primary);}
-a.link-secondary::after {background: var(--secondary)}
-a.link-accent::after {background: var(--accent)}
-a.link-white::after {background: var(--white)}
-a.link-grey::after {background: var(--grey)}
-a.link-body::after {background: var(--body-color)}
-a.link-primary:hover::after, a.link-secondary:hover::after, a.link-accent:hover::after, a.link-white:hover::after, a.link-grey:hover::after, a.link-body:hover::after {
+a.link-primary::after, .link-primary a::after { background: var(--primary);}
+a.link-secondary::after, .link-secondary a::after {background: var(--secondary)}
+a.link-accent::after, .link-accent a::after {background: var(--accent)}
+a.link-white::after, .link-white a::after {background: var(--white)}
+a.link-grey::after, .link-grey a::after {background: var(--grey)}
+a.link-body::after, a.link-body a::after {background: var(--body-color)}
+a.link-primary:hover::after, a.link-secondary:hover::after, a.link-accent:hover::after, a.link-white:hover::after, a.link-grey:hover::after, a.link-body:hover::after, .link-primary:hover a::after, .link-secondary:hover a::after, .link-accent:hover a::after, .link-white:hover a::after, .link-grey:hover a::after, .link-body:hover a::after  {
     width:100%;
 }
 
