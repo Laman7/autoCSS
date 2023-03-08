@@ -1,5 +1,6 @@
 # AutoCSS (v1.8)
 1. Add margin-b-xx for bottom margin
+2. Introduce .ratio-x-x for standard ratio
 
 # AutoCSS (v1.7) 12 Jan (Beta)
 1. ~~Added col-1, col-2 .. col-12 for specific column size.~~ KIV
@@ -240,6 +241,19 @@ You can use variable xs, s, m, l, xl, xxl, xxxl or clamp for example
 #div-box { margin : var(--xs)}
 #div-box { margin: var(--clamp-xl)}
 ```
+
+## Ratios
+Ratios can be applied to div and images
+
+CSS | Grid Behavior | Application
+--- | --- | ---
+.ratio-1-1 |  1 x 1 | Apply to image or div container
+.ratio-2-3 |  2 x 3 | Apply to image or div container
+.ratio-3-2 |  3 x 2 | Apply to image or div container
+.ratio-3-4 |  3 x 4 | Apply to image or div container
+.ratio-4-3 |  4 x 3 | Apply to image or div container
+.ratio-16-9 |  16 x 9 | Apply to image or div container
+
 
 ### Remove Padding at Breakpoint 
 Remove the padding at certain breakpoint
