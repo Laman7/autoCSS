@@ -1,6 +1,7 @@
 # AutoCSS (v1.8)
 1. Add margin-b-xx for bottom margin
 2. Introduce .ratio-x-x for standard ratio
+3. Added .lead for bigger text on paragraph
 
 # AutoCSS (v1.7) 12 Jan (Beta)
 1. ~~Added col-1, col-2 .. col-12 for specific column size.~~ KIV

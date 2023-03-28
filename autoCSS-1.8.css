@@ -162,7 +162,6 @@ h5, h6, .text-s {
 .text-justify {
     text-align: justify;
 }
-.ct-text-block {padding: 0.5rem 0}
 .primary, .primary a {color: var(--primary)}
 .primary-off, .primary-off a {color: var(--primary-off)}
 .secondary, .secondary a {color: var(--secondary)}
@@ -240,7 +239,7 @@ h5, h6, .text-s {
 }
 
 @media (max-width: 480px) {
-    .space-h-xs:not(.ct-section) > * + *,.space-h-s:not(.ct-section) > * + *, .space-h-m:not(.ct-section) > * + *, .space-h-l:not(.ct-section) > * + *, .space-h-xl:not(.ct-section) > * + * {margin-left:0rem}
+    .space-h-xs:not(.ct-section) > * + *,.space-h-s:not(.ct-section) > * + *, .space-h-m:not(.ct-section) > * + *, .space-h-l:not(.ct-section) > * + *, .space-h-xl:not(.ct-section) > * + * {margin-left:.5rem}
 }
 section{
     padding: 0 clamp(1rem, calc(1rem + ((1vw - 0.3rem) * -1.9038)), 0.01rem);
@@ -388,6 +387,7 @@ section{
     grid-template-columns: 3fr 2fr;
 }
 @media (max-width: 768px) {
+    .grid-1-2:not(.ct-section) { grid-template-columns: repeat(1, 1fr);}
     .grid-1-3:not(.ct-section), .grid-2-3:not(.ct-section) {grid-template-columns: 1fr 2fr;}
     .grid-3-1:not(.ct-section), .grid-3-2:not(.ct-section) {grid-template-columns: 2fr 1fr;}
 }
@@ -420,7 +420,7 @@ section{
 }
 .gap-xxl:not(.ct-section) {
     gap: calc(var(--s) * 6);
-    gap: vcalc(var(--clamp-s) * 6);
+    gap: calc(var(--clamp-s) * 6);
 }
 .gap-none:not(.ct-section) {
     gap: 0;
@@ -545,6 +545,7 @@ section{
     }
     .pad-md-none, .pad-lg-none, .pad-md-0 {padding: 0 !important}
     .grid-l-reverse,  .grid-md-reverse {order: -1}
+    .pad-l { padding: (var(--clamp-s) );}
 }
 @media (max-width: 480px) {
     .pad-sm-none, .pad-m-none, .pad-sm-0 {padding: 0 !important}
@@ -931,6 +932,8 @@ button:hover {
     .btn-s.btn-long { padding: calc(var(--clamp-s))  calc(var(--clamp-s)*2);}
     .btn-m.btn-long { padding: calc(var(--clamp-m))  calc(var(--clamp-m)*2);}
     .btn-l.btn-long { padding: calc(var(--clamp-l))  calc(var(--clamp-l)*2);}
+    .btn-m { padding: calc(var(--clamp-body)*1)  calc(var(--clamp-body)*1.5);}
+    .btn-l { padding: calc(var(--clamp-body)*1.25)  calc(var(--clamp-body)*2);}
 }
 a.btn-text-dark {color: var(--black)}
 a.btn-text-light {color:var(--white)}
@@ -1153,7 +1156,7 @@ label {
 	background-image: linear-gradient(45deg, var(--primary), var(--secondary));
 }
 
-.none {display:none}
+.none {display:none !important}
 
 @media (max-width:992px) {
     .none-lg {display: none !important;}
