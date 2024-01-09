@@ -1,4 +1,4 @@
-/* AutoCSS 1.8 3 Mar 23 Developed by Laman7 https://github.com/edwin-laman7/autoCSS */
+/* AutoCSS 1.9 July 2023 Developed by Laman7 https://github.com/edwin-laman7/autoCSS */
 /* Be sure AutoCSS variables above the line or loads before this */
 *,::after,::before{box-sizing:border-box}
 body{min-height:100vh; text-rendering:optimizeSpeed}
@@ -1205,5 +1205,4 @@ label {
 .ratio-3-2 {aspect-ratio: 3 / 2; object-fit: cover;}
 .ratio-3-4 {aspect-ratio: 3 / 4; object-fit: cover;}
 .ratio-4-3 {aspect-ratio: 4 / 3; object-fit: cover;}
-.ratio-16-9 {aspect-ratio: 16 / 9; object-fit: cover;}
-												
+.ratio-16-9 {aspect-ratio: 16 / 9; object-fit: cover;}	
