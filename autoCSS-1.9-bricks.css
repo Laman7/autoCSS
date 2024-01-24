@@ -1208,3 +1208,6 @@ label {
 .ratio-16-9 {aspect-ratio: 16 / 9; object-fit: cover;}
 .column-2 {column-count: 2}
 .column-3 {column-count: 3}
+@media (max-width:767px) {
+    .column-2, .column-3 {column-count: 1}
+}
