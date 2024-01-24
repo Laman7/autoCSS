@@ -1205,4 +1205,6 @@ label {
 .ratio-3-2 {aspect-ratio: 3 / 2; object-fit: cover;}
 .ratio-3-4 {aspect-ratio: 3 / 4; object-fit: cover;}
 .ratio-4-3 {aspect-ratio: 4 / 3; object-fit: cover;}
-.ratio-16-9 {aspect-ratio: 16 / 9; object-fit: cover;}	
+.ratio-16-9 {aspect-ratio: 16 / 9; object-fit: cover;}
+.column-2 {column-count: 2}
+.column-3 {column-count: 3}

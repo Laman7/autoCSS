@@ -1,5 +1,5 @@
 # AutoCSS (v1.9)
-
+1. Added Column Count
 
 # AutoCSS (v1.8)
 1. Add margin-b-xx for bottom margin
@@ -337,3 +337,9 @@ CSS | What it does
 - Form - Based on MVP
 - ul li ol li - Based on MVP
 - Animate – All links are animated
+
+## Column Count
+CSS | What it does 
+--- | --- 
+.columns-2 | Splits the text into two
+.columns-3 | Splits the text into three
