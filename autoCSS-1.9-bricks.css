@@ -20,7 +20,7 @@ button,input,select, textarea{font:inherit}
 }
 
 html {
-	scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 /*Typography*/
@@ -93,7 +93,7 @@ h5, h6, .text-s {
 }
 .text-normal {
     font-weight: 400;
-}	
+}   
 .text-semibold {
     font-weight: 600;
 }
@@ -325,7 +325,7 @@ section{
     align-items: stretch;
 }
 .grid-2:not(.ct-section) {
-	grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2,1fr);
 }
 .grid-3:not(.ct-section) {
     grid-template-columns: repeat(3,1fr);
@@ -735,43 +735,43 @@ section{
 }
 /* Button */
 .btn-primary,.btn-secondary,.btn-accent,.btn-white, .btn-black {
-	z-index:1; display:block;
-	border: none;
+    z-index:1; display:block;
+    border: none;
     padding: calc(var(--clamp-body)*.75)  calc(var(--clamp-body)*1.5);
-	transition: all 0.5s;
-	border:none;
-	overflow: hidden;
-	position: relative;
-	text-decoration:none;
-	border-radius: var(--btn-radius);
+    transition: all 0.5s;
+    border:none;
+    overflow: hidden;
+    position: relative;
+    text-decoration:none;
+    border-radius: var(--btn-radius);
     line-height: var(--lh-btn);
 }
 .btn-primary::before,.btn-secondary::before,.btn-accent::before,.btn-white::before, .btn-black::before {
-	content: "";
-	position: absolute; 
-	top: 0; left: 0; width: 100%; height: 100%;
-	transition: all 0.5s;
-	z-index: -1;
-	transform: translateX(-110%);
-	border-radius: var(--btn-radius);
+    content: "";
+    position: absolute; 
+    top: 0; left: 0; width: 100%; height: 100%;
+    transition: all 0.5s;
+    z-index: -1;
+    transform: translateX(-110%);
+    border-radius: var(--btn-radius);
 }
 .btn-primary::before {
-	background-color: var(--primary-off);
+    background-color: var(--primary-off);
 }
 .btn-secondary::before {
-	background-color: var(--secondary-off);
+    background-color: var(--secondary-off);
 }
 .btn-accent::before {
-	background-color: var(--accent-off);
+    background-color: var(--accent-off);
 }
 .btn-white::before {
-	background-color: var(--body-color);
+    background-color: var(--body-color);
 }
 .btn-white::before {
-	background-color: var(--body-color);
+    background-color: var(--body-color);
 }
 .btn-black::before {
-	background-color: var(--white);
+    background-color: var(--white);
 }
 
 .btn-primary:hover::before, .btn-secondary:hover::before, .btn-accent:hover::before, .btn-white:hover::before, .btn-black:hover::before {
@@ -782,15 +782,15 @@ section{
 }
 .btn-long:hover {padding-right: 4em}
 .btn-primary::after, .btn-secondary::after, .btn-accent::after, .btn-white::after, .btn-black::after {
-	content: var(--btn-hover);
-	position: absolute;
-	right: var(--btn-on);
-	opacity:0;
-	transition: all .2s;
+    content: var(--btn-hover);
+    position: absolute;
+    right: var(--btn-on);
+    opacity:0;
+    transition: all .2s;
 }
 .btn-primary:hover::after,.btn-secondary:hover::after,.btn-accent:hover::after,  .btn-white:hover::after, .btn-black:hover::after{
-	right:1em;
-	opacity:1;
+    right:1em;
+    opacity:1;
 }
 .btn-primary {
     background-color: var(--primary);
@@ -800,14 +800,14 @@ section{
 .btn-primary.btn-outline {
     background-color: transparent;
     color: var(--primary);
-	box-shadow: 0 0 0 var(--btn-outline-border) var(--primary) inset
+    box-shadow: 0 0 0 var(--btn-outline-border) var(--primary) inset
 }
 .btn-primary.btn-outline::before {
-	background-color: var(--primary);
+    background-color: var(--primary);
 }
 .btn-primary.btn-outline:hover {
-	color:var(--white);
-	box-shadow: 0 0 0 var(--btn-outline-border) var(--primary) inset
+    color:var(--white);
+    box-shadow: 0 0 0 var(--btn-outline-border) var(--primary) inset
 }
 
 .btn-secondary {
@@ -818,14 +818,14 @@ section{
 .btn-secondary.btn-outline {
     background-color: transparent;
     color: var(--secondary);
-	box-shadow: 0 0 0 var(--btn-outline-border) var(--secondary) inset
+    box-shadow: 0 0 0 var(--btn-outline-border) var(--secondary) inset
 }
 .btn-secondary.btn-outline::before {
-	background-color: var(--secondary);
+    background-color: var(--secondary);
 }
 .btn-secondary.btn-outline:hover {
-	color:var(--white);
-	box-shadow: 0 0 0 var(--btn-outline-border) var(--secondary) inset
+    color:var(--white);
+    box-shadow: 0 0 0 var(--btn-outline-border) var(--secondary) inset
 }
 .btn-accent {
     background-color: var(--accent);
@@ -835,14 +835,14 @@ section{
 .btn-accent.btn-outline {
     background-color: transparent;
     color: var(--accent);
-	box-shadow: 0 0 0 var(--btn-outline-border) var(--accent) inset
+    box-shadow: 0 0 0 var(--btn-outline-border) var(--accent) inset
 }
 .btn-accent.btn-outline::before {
-	background-color: var(--accent);
+    background-color: var(--accent);
 }
 .btn-accent.btn-outline:hover {
-	color:var(--white);
-	box-shadow: 0 0 0 var(--btn-outline-border) var(--accent) inset
+    color:var(--white);
+    box-shadow: 0 0 0 var(--btn-outline-border) var(--accent) inset
 }
 .btn-white {
     background-color: var(--white);
@@ -854,14 +854,14 @@ section{
 .btn-white.btn-outline {
     background-color: transparent;
     color: var(--white);
-	box-shadow: 0 0 0 var(--btn-outline-border) var(--white) inset
+    box-shadow: 0 0 0 var(--btn-outline-border) var(--white) inset
 }
 .btn-white.btn-outline::before {
-	background-color: var(--white);
+    background-color: var(--white);
 }
 .btn-white.btn-outline:hover {
-	color:var(--black);
-	box-shadow: 0 0 0 var(--btn-outline-border) var(--white) inset
+    color:var(--black);
+    box-shadow: 0 0 0 var(--btn-outline-border) var(--white) inset
 }
 .btn-black {
     background-color: var(--black);
@@ -873,14 +873,14 @@ section{
 .btn-black.btn-outline {
     background-color: transparent;
     color: var(--black);
-	box-shadow: 0 0 0 var(--btn-outline-border) var(--black) inset
+    box-shadow: 0 0 0 var(--btn-outline-border) var(--black) inset
 }
 .btn-black.btn-outline::before {
-	background-color: var(-white);
+    background-color: var(--white);
 }
 .btn-black.btn-outline:hover {
-	/* color:var(--black); */
-	box-shadow: 0 0 0 var(--btn-outline-border) var(--white) inset
+    /* color:var(--black); */
+    box-shadow: 0 0 0 var(--btn-outline-border) var(--white) inset
 }
 .btn-xs {
     font-size: var(--xs);
@@ -1033,10 +1033,10 @@ blockquote p::before {
     content: open-quote;
     font-size: 2em;
     position: relative;
-	top:.125em;
-	right:.5em;
-	display:block;
-	line-height:0;
+    top:.125em;
+    right:.5em;
+    display:block;
+    line-height:0;
 }
 
 blockquote {
@@ -1139,22 +1139,22 @@ label {
 
   /* width */
 ::-webkit-scrollbar {
-	width:8px; height:8px;
+    width:8px; height:8px;
 }
 /* Track */
 ::-webkit-scrollbar-track {
-	background-color: rgba(255,255,255,0.1);
-	border-radius: 8px; border:none;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 8px; border:none;
 }
 /* Handle */
 ::-webkit-scrollbar-thumb {
-	background-image: linear-gradient( rgba(0,0,0,0.3), rgba(0,0,0,0.3));
-	border-radius:8px;
-	box-shadow: rgba(0,0,0,.12) 0 3px 13px 1px;
-	transition: all 1s;
+    background-image: linear-gradient( rgba(0,0,0,0.3), rgba(0,0,0,0.3));
+    border-radius:8px;
+    box-shadow: rgba(0,0,0,.12) 0 3px 13px 1px;
+    transition: all 1s;
 }
 ::-webkit-scrollbar-thumb:hover,::-webkit-scrollbar-thumb:active {
-	background-image: linear-gradient(45deg, var(--primary), var(--secondary));
+    background-image: linear-gradient(45deg, var(--primary), var(--secondary));
 }
 
 .none {display:none !important}
@@ -1206,8 +1206,8 @@ label {
 .ratio-3-4 {aspect-ratio: 3 / 4; object-fit: cover;}
 .ratio-4-3 {aspect-ratio: 4 / 3; object-fit: cover;}
 .ratio-16-9 {aspect-ratio: 16 / 9; object-fit: cover;}
-.column-2 {column-count: 2}
-.column-3 {column-count: 3}
-@media (max-width:767px) {
-    .column-2, .column-3 {column-count: 1}
+.columns-2 {column-count: 2}
+.columns-3 {column-count: 3}
+@media (max-width:992px) {
+    .columns-2, .columns-3 {column-count: 1}
 }
