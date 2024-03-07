@@ -1,5 +1,6 @@
 # AutoCSS (v1.9)
 1. Added Column Count
+2. Improved Grid Top and Grid Bottom
 
 # AutoCSS (v1.8)
 1. Add margin-b-xx for bottom margin
@@ -74,6 +75,8 @@ CSS | Grid Behavior | Application
 .grid-xl-reverse ,.grid-lg-reverse |  Reverse the order in 992px size. Apply to child grid.  | Apply to parent div or container
 .grid-l-reverse ,.grid-md-reverse |  Reverse the order in 768px size. Apply to child grid.  | Apply to parent div or container
 .grid-m-reverse ,.grid-sm-reverse |  Reverse the order in 480px size. Apply to child grid.  | Apply to parent div or container
+.grid-top |  Aligns the grid items to be at top  | Apply to parent div or container
+.grid-bottom |  Aligns the grid items to be at top  | Apply to parent div or container
 
 Grid Responsive Overide
 CSS | Grid Behavior | Application
@@ -103,10 +106,10 @@ Font size is determined by 16px, 8 pt system and Geometric Pattern. Applied to a
 ## Default Font Classes
 CSS | Calculated Size
 --- | --- 
-.text-xxxl |  112px
+.text-xxxl |  120px 
 h1, .text-xxl | 80px
-h2, .text-xl | 48px
-h3, .text-l | 32px
+h2, .text-xl | 54px
+h3, .text-l | 36px
 h4, .text-m | 24px
 .text-body |  18px
 h5, h6, .text-s | 16px
