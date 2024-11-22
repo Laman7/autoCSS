@@ -1,3 +1,7 @@
+# AutoCSS (v2.0)
+1. Fixes for width mobile
+2. Improved blockquote for mobile
+
 # AutoCSS (v1.9)
 1. Added Column Count
 2. Improved Grid Top and Grid Bottom
@@ -213,6 +217,25 @@ CSS | What it does
 .width-12 | Size of 12 columns, 
 .width-full, .width-100 | 100% full width
 .card | looks like card layoout
+
+For Medium screen (tablet) assumes max 4 columns
+CSS | What it does 
+--- | --- 
+.width-lg-1 | 1 of 4 column
+.width-lg-2 | 2 of 4 column
+.width-lg-3 | 3 of 4 column
+.width-lg-4 | 4 of 4 column/ full column
+
+For small screen (mobile) assumes max 4 columns
+CSS | What it does 
+--- | --- 
+.width-sm-1 | 1 of 4 column
+.width-sm-2 | 2 of 4 column
+.width-sm-3 | 3 of 4 column
+.width-sm-4 | 4 of 4 column/ full column
+
+
+
 
 ## Div Padding
 ### Padding All

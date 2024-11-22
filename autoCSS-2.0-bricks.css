@@ -295,10 +295,10 @@ section{
     .width-lg-4, .width-lg-m {width: calc(4*25%);}
 }
 @media (max-width:480px) {
-    .width-sm-3 {width: calc(3*8.3%)}
-    .width-sm-6 {width: calc(6*8.3%)}
-    .width-sm-9 {width: calc(9*8.3%)}
-    .width-sm-full, .width-sm-12 {width: 100%;}
+    .width-sm-1 {width: calc(1*25%)}
+    .width-sm-2 {width: calc(2*25%)}
+    .width-sm-3 {width: calc(3*25%)}
+    .width-sm-full, .width-sm-4 {width: 100%;}
     
 }
 .cards {
