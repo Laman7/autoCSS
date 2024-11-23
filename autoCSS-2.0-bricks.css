@@ -1,4 +1,4 @@
-/* AutoCSS 2.0 20 March 2024 Developed by Laman7 https://github.com/edwin-laman7/autoCSS */
+/* AutoCSS 2.0 20 Nov 2024 Developed by Laman7 https://github.com/edwin-laman7/autoCSS */
 /* Be sure AutoCSS Setting variables above the line or loads before this */
 
 *,::after,::before{box-sizing:border-box}
@@ -287,8 +287,8 @@ section{
 }
 @media (max-width: 992px) {
     .width-full, .container {max-width: 992px}
-    .width-xxl, .width-xl, .width-l, .width-m, .width-xs, .width-xs, .width-50, .width-25, .width-5, .width-6, .width-7, .width-8, .width-9, .width-10, .width-100, .col-12, .col-11, .col-10 {width: 100%;}
-    .width-2, .width-3, .width-4 {width: 50%;}
+    .width-xxl, .width-xl, .width-l, .width-m, .width-50, .width-4, .width-5, .width-6, .width-7, .width-8, .width-9, .width-10, .width-100, .col-12, .col-11, .col-10 {width: 100%;}
+    .width-1, .width-2, .width-3, .width-xs, .width-s {width: 50%;}
     .width-lg-1 {width: calc(1*25%);}
     .width-lg-2, .width-lg-xs {width: calc(2*25%);}
     .width-lg-3, .width-lg-s {width: calc(3*25%);}
