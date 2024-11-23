@@ -369,3 +369,8 @@ CSS | What it does
 --- | --- 
 .columns-2 | Splits the text into two
 .columns-3 | Splits the text into three
+
+
+[Redesign Website with Laman7](https://laman7.com)
+
+[WebCare - WordPress Maintenance](https://webcare.co)
