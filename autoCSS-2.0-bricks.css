@@ -1082,10 +1082,6 @@ pre samp {
     white-space: pre-wrap;
 }
 
-form {
-    display: block;
-    /* padding: 1.5rem; */
-}
 @media (max-width: 480px) {
     form {
         padding: 1rem 0;
@@ -1116,13 +1112,9 @@ input[type="radio"]+label {
     font-weight: normal;
 }
 
-input,
-select,
-textarea {
+input, select,textarea { 
     border: 1px solid var(--grey);
     border-radius: var(--border-radius);
-    margin-bottom: 1rem;
-    padding: 0.4rem 0.8rem;
 }
 
 input[readonly],
