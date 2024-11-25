@@ -672,7 +672,7 @@ section{
     text-align: center;
 }
 .center-v:not(.ct-section),
-.ct-section.center-v > .ct-section-inner-wrap {
+.ct-section.center-v > .ct-section-inner-wrap {åç
     flex-direction: column;
     justify-items: center;
     justify-content: center;
