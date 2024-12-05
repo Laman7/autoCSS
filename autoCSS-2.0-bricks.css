@@ -1,5 +1,5 @@
-/* AutoCSS 2.0 20 Nov 2024 Developed by Laman7 https://github.com/edwin-laman7/autoCSS */
-/* Be sure AutoCSS Setting variables above the line or loads before this */
+/* AutoCSS 2.0 20 Dec 2024 Developed by Laman7 https://github.com/edwin-laman7/autoCSS */
+/* Be sure to load "AutoCSS Setting" variables the following */
 
 *,::after,::before{box-sizing:border-box}
 body{min-height:100vh; text-rendering:optimizeSpeed}
@@ -22,6 +22,7 @@ button,input,select, textarea{font:inherit}
 
 html {
     scroll-behavior: smooth;
+    font-size: 100%; 
 }
 
 /*Typography*/
@@ -31,7 +32,6 @@ body {
     color: var(--body-color);
     line-height: var(--lh-body);
     background-color: var(--base);
-
 }
 .text-xxxl {
     font-size: var(--xxxl);
@@ -299,9 +299,8 @@ section{
     .width-sm-2 {width: calc(2*25%)}
     .width-sm-3 {width: calc(3*25%)}
     .width-sm-full, .width-sm-4 {width: 100%;}
-    
 }
-.cards {
+.card {
     background-color: var(--white);
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
     border-radius: var(--border-radius);
@@ -309,11 +308,10 @@ section{
     transition: all 500ms;
 }
 @media (max-width: 768px) {
-    .cards { margin: 0.5rem 0;}
+    .card { margin: 0.5rem 0;}
 }
 
-.cards:hover {
-    transform: translate(-.125rem,-.5rem);
+.card:hover {
     box-shadow: .25rem .25rem 1rem rgba(0, 0, 0, 0.3);
     cursor: pointer;
 }
@@ -672,7 +670,7 @@ section{
     text-align: center;
 }
 .center-v:not(.ct-section),
-.ct-section.center-v > .ct-section-inner-wrap {åç
+.ct-section.center-v > .ct-section-inner-wrap {
     flex-direction: column;
     justify-items: center;
     justify-content: center;
@@ -1063,7 +1061,7 @@ ul li {
     padding: 0.5rem 0;
 }
 
-p {
+main p {
     margin: 0 0 1.5em;
     padding: 0;
 }
@@ -1208,3 +1206,13 @@ label {
 @media (max-width:992px) {
     .columns-2, .columns-3 {column-count: 1}
 }
+main em {
+    padding: 0 0.5rem;
+    border-radius: 1em;
+    font-style: normal;
+    font-weight:500;
+    background-image: linear-gradient(90deg,var(--highlight-dark),var(--highlight),var(--highlight));
+}
+.fit-content > * {min-width:fit-content}
+@media (max-width: 768px) { .flex > * {min-width:auto} }
+.flex {display:flex}
