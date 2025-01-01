@@ -1,39 +1,53 @@
-/* AutoCSS 2.0 Nov 2024 Developed by Laman7 https://github.com/edwin-laman7/autoCSS */
-/* Be sure AutoCSS variables above the line or loads before this */
+/*
+ Theme Name:   Laman7 - Bricks Child Theme
+ Theme URI:    https://laman7.com/
+ Description:  Use this child theme to extend Bricks. Comes with AutoCSS 2.0
+ Author:       Laman7
+ Author URI:   https://laman7.com/
+ Template:     bricks
+ Version:      1.3
+ Text Domain:  bricks
+*/
+
+/* AutoCSS 2.0 Dec 2024 Developed by Laman7 https://github.com/edwin-laman7/autoCSS */
 /* Made by Laman7 */
 
 html {font-size:100%}
 :root {
     /* Colors */
-	--primary: #2B7D27;
-	--primary-off: #40A639;
-	--secondary: #00659F;
-  	--secondary-off: #047DC2;
-  	--accent: #FE1109;
-  	--accent-off: #B60C07;
-  	--body-color: #262F26;
-	--body-off: #022345;
-  	--white: #FFFFFF;
-  	--base: #F8FCF7;
-	--grey-light: #DBE6DB;
-	--grey: #A8B8A8;
-	--grey-mid: #738C73;
-	--grey-dark: #3C493C;
-	--black: #101410;
-	
-	--highlight: #2B7D2744;
-	--highlight-dark: #2B7D2777;
-	
+    --primary: #2B7D27;
+    --primary-off: #40A639;
+    --secondary: #00659F;
+    --secondary-off: #047DC2;
+    --accent: #FE1109;
+    --accent-off: #B60C07;
+    --body-color: #262F26;
+    --body-off: #022345;
+    --white: #FFFFFF;
+    --base: #F8FCF7;
+    --grey-light: #DBE6DB;
+    --grey: #A8B8A8;
+    --grey-mid: #738C73;
+    --grey-dark: #3C493C;
+    --black: #101410;
+    
+    --highlight: #FFC514cc; /* default 44 */
+    --highlight-dark: #FFC51490; /* default 77 */
+    
     --hover-brightness: 1.3;
     --border-radius: 0.5rem;
     --btn-radius: 2rem;
-	--btn-hover: "\00BB";
+    --btn-hover: "\00BB";
     --btn-outline-border: 2px;
-	/* 
-	\2192 for arrow
-	\203A for single right chevron
-	\00BB for double right chevron
-	*/
+    /* 
+    \2192 for arrow
+    \203A for single right chevron
+    \00BB for double right chevron
+    */
+    
+    /* Delete to use Bricks Default */
+    --bricks-color-primary: var(--primary) !important; 
+    --bricks-color-secondar: var(--secondary) !important;
 
     --xxxl: 7.5rem     ; /* changed 120px*/
     --xxl: 5rem        ; /* H1 80px */
@@ -43,18 +57,18 @@ html {font-size:100%}
     --body: 1.125rem   ; /* 18px */
     --s: 1rem          ; /* 16px */
     --xs:0.667rem      ; /* changed 10px*/
-	--lh-xxxl: 1.2em;
+    --lh-xxxl: 1.2em;
     --lh-h1: 1.1em;
-	--lh-h2: 1.3em;
-	--lh-heading: 1.3em;
+    --lh-h2: 1.3em;
+    --lh-heading: 1.3em;
     --lh-body: 1.5em;
     --lh-btn: 1em;
-	--ls-heading:-0.025em;
-	--ls-h1:-0.025em;
+    --ls-heading:-0.025em;
+    --ls-h1:-0.025em;
     --ls-h2:-0.025em;
     --col:7rem;
     --btn-on: 3rem; /*Turn button when a number exists*/
-	
+    
     --clamp-xxxl: clamp(3rem, calc(3rem + ((1vw - 0.3rem) * 7.6923)), var(--xxxl));
     --clamp-xxl: clamp(2.5rem, calc(2.5rem + ((1vw - 0.3rem) * 4.8077)), var(--xxl));
     --clamp-xl: clamp(1.75rem, calc(1.75rem + ((1vw - 0.3rem) * 2.4038)), var(--xl));
@@ -64,6 +78,7 @@ html {font-size:100%}
     --clamp-xs: clamp(0.625rem, calc(0.625rem + ((1vw - 0.3rem) * 0.2404)), var(--xs));
         
     --clamp-body: clamp(1rem, calc(1rem + ((1vw - 0.3rem) * 0.2404)), var(--body));
+    --clamp-section: clamp(1rem, calc(1rem + ((1vw - 0.3rem) * 3.8462)), 3rem);
 
     --width-card: 26rem;
     --width-card-m: 40rem;
@@ -76,3 +91,20 @@ html {font-size:100%}
     --landscape: 768px; /* Landscape */
     --mobile: 480px; /* Mobile */
 }
+
+/* Overide Bricks Default */
+.brxe-section {
+}
+.brxe-container {
+    width: 1312px;
+    @media (max-width: 992px) {
+        padding: 0 var(--clamp-s);
+    }
+}
+
+button.bricks-button {
+    border-radius: var(--btn-radius);
+    gap: calc(var(--clamp-s)*.75);
+}
+
+/* Your Styles Below this link */
