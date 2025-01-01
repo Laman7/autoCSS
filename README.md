@@ -1,6 +1,7 @@
-# AutoCSS (v2.0)
+# AutoCSS (v2.0) (1 Jan 25)
 1. Fixes for width mobile
 2. Improved blockquote for mobile
+3. Added New variable '--clamp-section'
 
 # AutoCSS (v1.9)
 1. Added Column Count
