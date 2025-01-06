@@ -1142,5 +1142,11 @@ main em {
 .border-grey-dark {border:1px solid var(--grey-dark); border-radius: var(--border-radius)}
 .fit-content > * {min-width:fit-content}
 .flex {display:flex}
+.flex-row {display:flex; flex-direction: row;}
+.flex-right {justify-content: right;}
+.flex-h-center {justify-content: center;}
+.flex-v-center {align-items: center;}
+.flex-col {display:flex; flex-direction: column;}
+.flex-wrap {flex-wrap: wrap;}
 @media (max-width: 768px) { .flex > * {min-width:auto} }
 .none {display:none !important}
