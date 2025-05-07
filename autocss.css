@@ -1,4 +1,4 @@
-/* AutoCSS 2.0 20 Dec 2024 Developed by Laman7 https://github.com/edwin-laman7/autoCSS */
+/* AutoCSS 2.0 7 May 25 Developed by Laman7 https://github.com/edwin-laman7/autoCSS */
 /* Load "AutoCSS Setting" variables before the following lines */
 
 *,::after,::before{box-sizing:border-box}
@@ -422,7 +422,7 @@ section{
     grid-template-columns: 3fr 2fr;
 }
 @media (max-width: 768px) {
-    .grid-1-2:not(.ct-section) { grid-template-columns: repeat(1, 1fr);}
+    .grid-1-2:not(.ct-section),.grid-2-1:not(.ct-section) { grid-template-columns: repeat(1, 1fr);}
     .grid-1-3:not(.ct-section), .grid-2-3:not(.ct-section) {grid-template-columns: 1fr 2fr;}
     .grid-3-1:not(.ct-section), .grid-3-2:not(.ct-section) {grid-template-columns: 2fr 1fr;}
 }
@@ -455,6 +455,10 @@ section{
 }
 .gap-none:not(.ct-section), .gap-0:not(.ct-section) {
     gap: 0;
+}
+@media (max-width: 768px) {
+    .gap-md-m {gap: calc(var(--clamp-s) * 2);}
+    .gap-md-s {gap: var(--clamp-m)}
 }
 
 /* Breakout */
@@ -527,7 +531,7 @@ section{
     .pad-lg-0, .pad-xl-0, .pad-xl-none, {padding: 0;}
 }
 @media (max-width: 992px) {
-    .pad-md-0, .pad-lg-0, .pad-lg-none {padding: 0 !important;}
+    .pad-lg-0, .pad-lg-none {padding: 0 !important;}
     .grid-xl-reverse,  .grid-lg-reverse {order: -1}
 }
 

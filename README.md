@@ -1,3 +1,8 @@
+# Fix
+1. Grid-2-1 now is auto collapse
+2. Added gap-md-m and gap-md-s for better control in responsive.
+
+
 # AutoCSS (v2.0) (1 Jan 25)
 1. Fixes for width mobile
 2. Improved blockquote for mobile

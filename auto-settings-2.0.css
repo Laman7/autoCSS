@@ -97,7 +97,7 @@ html {font-size:100%}
 }
 .brxe-container {
     width: 1312px;
-    @media (max-width: 992px) {
+    @media (max-width: 1312px) {
         padding: 0 var(--clamp-s);
     }
 }
