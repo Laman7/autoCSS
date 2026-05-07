@@ -1145,3 +1145,22 @@ main em {
 .flex {display:flex}
 @media (max-width: 768px) { .flex > * {min-width:auto} }
 .none {display:none !important}
+/* Shadows */
+.shadow-accent    { box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.1); }
+.shadow-mild      { box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.03); }
+.shadow-soft      { box-shadow: 0px 15px 30px 0px rgba(119, 123, 146, 0.1); }
+.shadow-elegant   { box-shadow: 0px 5px 23px 0px rgba(188, 207, 219, 0.35); }
+.shadow-focus     { box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.07); }
+.shadow-highlight { box-shadow: 0px 32px 48px 0px rgba(0, 0, 0, 0.15); }
+.shadow-none      { box-shadow: none; }
+
+/* Hover variants */
+.shadow-hover-accent:hover    { box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.1); }
+.shadow-hover-mild:hover      { box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.03); }
+.shadow-hover-soft:hover      { box-shadow: 0px 15px 30px 0px rgba(119, 123, 146, 0.1); }
+.shadow-hover-elegant:hover   { box-shadow: 0px 5px 23px 0px rgba(188, 207, 219, 0.35); }
+.shadow-hover-focus:hover     { box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.07); }
+.shadow-hover-highlight:hover { box-shadow: 0px 32px 48px 0px rgba(0, 0, 0, 0.15); }
+
+/* Transition */
+[class*="shadow-"] { transition: box-shadow 0.5s ease; }
