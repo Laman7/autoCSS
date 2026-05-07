@@ -235,7 +235,7 @@ section{
 .width-3, .width-s {width: calc(3*8.3%);}
 .width-4, .width-m {width: calc(4*8.3%);}
 .width-5 {width: calc(5*8.3%);}
-.width-6, .width-l, .width-50 {width: calc(100%/6);}
+.width-6, .width-l, .width-50 {width: calc(100%/2);}
 .width-7 {width: calc(7*8.3%);}
 .width-8, .width-xl {width: calc(8*8.3%);}
 .width-9 {width: calc(9*8.3%);}
@@ -246,7 +246,7 @@ section{
     width: 100%;
     max-width: 100%;
 }
-/* Reactivate */
+/* Col System */
 #brx-content .col-1 {width: calc(var(--col)*1 - 2rem)}
 #brx-content .col-2 {width: calc(var(--col)*2 - 2rem)}
 #brx-content .col-3 {width: calc(var(--col)*3 - 2rem)}
