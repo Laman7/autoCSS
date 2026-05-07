@@ -230,12 +230,12 @@ section{
 
 /* Width System */
 
-.width-1 {width: calc(1*8.3%);}
+.width-1 {width: calc(100%/12);}
 .width-2, .width-xs {width: calc(2*8.3%);}
 .width-3, .width-s {width: calc(3*8.3%);}
 .width-4, .width-m {width: calc(4*8.3%);}
 .width-5 {width: calc(5*8.3%);}
-.width-6, .width-l, .width-50 {width: calc(6*8.3%);}
+.width-6, .width-l, .width-50 {width: calc(100%/6);}
 .width-7 {width: calc(7*8.3%);}
 .width-8, .width-xl {width: calc(8*8.3%);}
 .width-9 {width: calc(9*8.3%);}
@@ -307,6 +307,7 @@ section{
 .brxe-container{
     row-gap: calc(var(--clamp-s) * 4);
     column-gap: calc(var(--clamp-s) * 4);
+    &.pad-xxs {padding: calc(var(--clamp-s) * .75)}
     &.pad-xs {padding: calc(var(--clamp-s) * 1)}
     &.pad-s {padding: calc(var(--clamp-s) * 2)}
     &.pad-m {padding: calc(var(--clamp-s) * 4)}
@@ -330,6 +331,7 @@ section{
 .brxe-block{
     row-gap: calc(var(--clamp-s) * 1);
     column-gap: calc(var(--clamp-s) * 1);
+    &.pad-xxs {padding: calc(var(--clamp-s) * .5)}
     &.pad-xs {padding: calc(var(--clamp-s) * .75)}
     &.pad-s {padding: calc(var(--clamp-s) * 1)}
     &.pad-m {padding: calc(var(--clamp-s) * 1.5)}
@@ -355,7 +357,7 @@ section{
 
 .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-1-2, .grid-1-3, .grid-2-1, .grid-2-3, .grid-3-1, .grid-3-2 {
     display: grid !important; 
-    gap: calc(var(--clamp-s) * 2);;
+    gap: calc(var(--clamp-s) * 2);
     align-items: stretch;
 }
 .grid-2:not(.ct-section) {
@@ -434,6 +436,12 @@ section{
 .grid-bottom{align-items: end;}
 
 /* Gaps for Grid */
+.gap-xxs:not(.ct-section) {
+    gap: calc(var(--clamp-s) * .5);
+}
+.gap-xs:not(.ct-section) {
+    gap: calc(var(--clamp-s) * .75);
+}
 .gap-xs:not(.ct-section) {
     gap: var(--clamp-s)
 }
@@ -519,7 +527,7 @@ section{
     margin: calc(var(--clamp-s) * 4) 0;
 }
 .margin-v-xxl:not(.ct-section) {
-    margin: vcalc(var(--clamp-s) * 6) 0;
+    margin: calc(var(--clamp-s) * 6) 0;
 }
 
 @media (max-width: 1312px) {
@@ -618,7 +626,7 @@ section{
     align-items: flex-start;
 }
 .center-h:not(.ct-section),
-.ct-section.center-x > .ct-section-inner-wrap {
+.ct-section.center-h > .ct-section-inner-wrap {
     display: flex;
     flex-direction: column;
     justify-items: center;
@@ -704,9 +712,6 @@ section{
 }
 .btn-accent::before {
     background-color: var(--accent-off);
-}
-.btn-white::before {
-    background-color: var(--body-color);
 }
 .btn-white::before {
     background-color: var(--body-color);
