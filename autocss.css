@@ -464,6 +464,17 @@ section{
     gap: 0;
 }
 
+/* Gaps for Block - Flex */
+.brxe-block.gap-xxs {gap: calc(var(--clamp-s) * .125)}
+.brxe-block.gap-xs {gap: calc(var(--clamp-s) * .25)}
+.brxe-block.gap-s {gap: calc(var(--clamp-s) * .725)}
+.brxe-block.gap-m {gap: calc(var(--clamp-s) * 1)}
+.brxe-block.gap-l {gap: calc(var(--clamp-s) * 1.25)}
+.brxe-block.gap-xl {gap: calc(var(--clamp-s) * 1.5)}
+.brxe-block.gap-xxl {gap: calc(var(--clamp-s) * 2)}
+.brxe-block.gap-xxxl {gap: calc(var(--clamp-s) * 3)}
+.brxe-block.gap-none, .brxe-block.gap-0 {gap: 0}
+
 /* Breakout */
 @media (min-width: 1279px) {
     .breakout-s {
