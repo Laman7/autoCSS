@@ -230,7 +230,7 @@ section{
 
 /* Width System - Based on Parents*/
 
-.width-, .w-1 {width: calc(100%/12);}
+.width-1, .w-1 {width: calc(100%/12);}
 .width-2, .width-xs, .w-2 {width: calc(2*8.3%);}
 .width-3, .width-s, .w-3 {width: calc(3*8.3%);}
 .width-4, .width-m, .w-4 {width: calc(4*8.3%);}
@@ -242,7 +242,7 @@ section{
 .width-10, .w-10 {width: calc(10*8.3%);}
 .width-11, .w-11 {width: calc(11*8.3%);}
 .width-12, .w-12 {width: calc(12*8.3%);}
-.width-full, .container {
+.width-full, .w-full, .container {
     width: 100%;
     max-width: 100%;
 }
