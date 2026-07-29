@@ -1003,7 +1003,7 @@ blockquote footer {
     padding: 1.5rem 0;
 }
 blockquote p {margin:0; padding: 0}
-#brx-content ol li, #brx-content ul li { padding: 0.5rem 0;}
+#brx-content ol li, #brx-content ul li { padding: 0 0;}
 
 main p {
     margin: 0 0 calc(var(--clamp-s) * 1.25);
