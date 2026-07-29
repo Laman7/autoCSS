@@ -838,9 +838,13 @@ section{
     /* color:var(--black); */
     box-shadow: 0 0 0 var(--btn-outline-border) var(--white) inset
 }
-.btn-xs {
+.btn-xxs {
     font-size: var(--clamp-xs);
     padding: calc(var(--clamp-xs)*.75)  calc(var(--clamp-xs)*1.5);
+}
+.btn-xs {
+    font-size: var(--clamp-xs);
+    padding: calc(var(--clamp-xs)*1)  calc(var(--clamp-xs)*1.5);
 }
 .btn-s {
     font-size: var(--s);
