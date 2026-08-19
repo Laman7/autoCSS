@@ -1039,6 +1039,8 @@ form header {
     padding: 1.5rem 0;
 }
 
+/* Form */
+#brx-content{
 input,
 label,
 select,
@@ -1077,7 +1079,7 @@ form ul li { padding: 0 }
     color: var(--base);
     background: var(--primary);
   }
-
+}
   /* width */
 ::-webkit-scrollbar {
     width:8px; height:8px;

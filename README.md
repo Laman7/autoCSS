@@ -1,3 +1,8 @@
+
+# Fix August .label issue
+1. The .label was placed as global, this messes up the bricks interface. Added #brx-content as the parent style
+
+
 # Fix
 1. Grid-2-1 now is auto collapse
 2. Added gap-md-m and gap-md-s for better control in responsive.
