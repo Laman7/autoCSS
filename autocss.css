@@ -692,9 +692,9 @@ section{
 @media only screen and (max-width: 767px) {
     .sticky-top-s, .sticky-top-m, .sticky-top-l {top:.5rem}
 }
-/* Button */
+/* Button 26 Aug Removed the display:block; for bricks compatiblility*/
 .btn-primary,.btn-secondary,.btn-accent,.btn-white, .btn-black {
-    z-index:1; display:block;
+    z-index:1; /*display:block; */
     border: none;
     padding: calc(var(--clamp-body)*.75)  calc(var(--clamp-body)*1.5);
     transition: all 0.5s;
